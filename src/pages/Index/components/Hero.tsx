@@ -1,6 +1,7 @@
 import React from 'react'
-import hero from '../../hero.avif'
-import logo_zeinternational from '../../logo.webp'
+import hero from '../../../assets/images/hero.avif'
+import logo from '../../../assets/images/logo.webp'
+import CardSelector from './CardSelector'
 interface HeroProps {
   backgroundImageUrl?: string
   logoUrl?: string
@@ -13,7 +14,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({
   backgroundImageUrl = hero,
-  logoUrl = logo_zeinternational,
+  logoUrl = logo,
   dateText = '24 DE MAYO',
   locationLink = 'https://maps.app.goo.gl/JcyQCJghuztPJ9HV7',
   locationText = 'FINAL PRESENCIAL',
@@ -77,6 +78,10 @@ const Hero: React.FC<HeroProps> = ({
             {twitchText.split(' ')[1]}
           </a>
         </div>
+      </div>
+      {/* ←–– Card selector goes here ––→ */}
+      <div className="relative flex h-full w-full max-w-6xl flex-col items-center justify-end gap-8 sm:p-4">
+        <CardSelector />
       </div>
     </div>
   </section>

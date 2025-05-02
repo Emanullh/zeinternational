@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Smash",
+    "teamName": "Demo",
+    "image": "smash_grid.webp"
+  },
+  {
+    "id": 2,
+    "name": "Benjaz",
+    "teamName": "Demo",
+    "image": "benjaz_grid.webp"
+  },
+  {
+    "id": 3,
+    "name": "Macarius",
+    "teamName": "Demo",
+    "image": "macarius_grid.webp"
+  },
+  {
+    "id": 4,
+    "name": "Iwo",
+    "teamName": "Demo",
+    "image": "iwo_grid.webp"
+  },
+  {
+    "id": 5,
+    "name": "Vann",
+    "teamName": "Demo",
+    "image": "vann_grid.webp"
+  },
+  {
+    "id": 6,
+    "name": "Pato",
+    "teamName": "Demo",
+    "image": "pato_grid.webp"
+  },
+  {
+    "id": 7,
+    "name": "Buti",
+    "teamName": "Demo",
+    "image": "buti_grid.webp"
+  },
+  {
+    "id": 8,
+    "name": "Sideral",
+    "teamName": "Demo",
+    "image": "sideral_grid.webp"
+  }
+]

@@ -7,7 +7,7 @@ import logo from '../../logo.svg'
 import Counter from './Counter'
 import DocList from './DocList'
 import styles from './index.module.css'
-import Hero from '../../components/Hero/Hero'
+import Hero from './components/Hero'
 interface Props {}
 
 const Index: React.FC<Props> = memo(() => {
