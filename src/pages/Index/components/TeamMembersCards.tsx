@@ -148,7 +148,7 @@ export const TeamMembersCards: React.FC = () => {
                 variants={logoVariants}
               >
                 <img
-                  src={`/src/assets/images/teams/${team.teamlogo}`}
+                  src={`/images/teams/${team.teamlogo}`}
                   alt={team.teamname}
                   className="w-full h-auto block"
                 />
@@ -183,7 +183,7 @@ export const TeamMembersCards: React.FC = () => {
                   <div className="z-0 transition-opacity duration-300 group-hover:opacity-0">
                     <img
                       className="w-full rounded-lg shadow-xl"
-                      src={`/src/assets/images/integrates/${m.avatarImage}`}
+                      src={`/images/integrates/${m.avatarImage}`}
                       alt={m.name}
                     />
                   </div>

@@ -7,7 +7,7 @@ const InteractiveCardSelector: React.FC = () => {
     useSelectedParticipantStore((s) => s.selectedId)?.toString() ?? '-1'
   const setSelectedId = useSelectedParticipantStore((s) => s.setSelectedId)
   const [hoverId, setHoverId] = useState<string>('-1') // Nueva variable de estado
-  const participants_path = 'src/assets/images/participants/'
+  const participants_path = '/images/participants/'
 
   return (
     <div className="flex flex-wrap justify-center p-4">
