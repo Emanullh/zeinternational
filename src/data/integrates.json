@@ -3,42 +3,48 @@
     "integrateid": 1,
     "avatarImage": "default3.webp",
     "mmr": 5500,
-    "laneposition": 1,
+    "laneposition": 3,
+    "name": "Smash",
     "kickUrl": "https://kick.com/smash"
   },
   {
     "integrateid": 2,
     "avatarImage": "default1.webp",
     "mmr": 6200,
-    "laneposition": 2,
+    "laneposition": 3,
+    "name": "Benjaz",
     "kickUrl": "https://kick.com/benjaz"
   },
   {
     "integrateid": 3,
     "avatarImage": "default5.webp",
     "mmr": 4700,
-    "laneposition": 3,
+    "laneposition": 5,
+    "name": "Macarius",
     "kickUrl": "https://kick.com/macarius"
   },
   {
     "integrateid": 4,
     "avatarImage": "default2.webp",
     "mmr": 5100,
-    "laneposition": 4,
+    "laneposition": 1,
+    "name": "Iwo",
     "kickUrl": "https://kick.com/iwo"
   },
   {
     "integrateid": 5,
     "avatarImage": "default4.webp",
     "mmr": 5800,
-    "laneposition": 5,
+    "laneposition": 1,
+    "name": "Vann",
     "kickUrl": "https://kick.com/vann"
   },
   {
     "integrateid": 6,
     "avatarImage": "default1.webp",
     "mmr": 4900,
-    "laneposition": 1,
+    "laneposition": 2,
+    "name": "Pato",
     "kickUrl": "https://kick.com/pato"
   },
   {
@@ -46,6 +52,7 @@
     "avatarImage": "default5.webp",
     "mmr": 5300,
     "laneposition": 2,
+    "name": "Buti",
     "kickUrl": "https://kick.com/buti"
   },
   {
@@ -53,55 +60,63 @@
     "avatarImage": "default2.webp",
     "mmr": 6000,
     "laneposition": 3,
+    "name": "Sideral",
     "kickUrl": "https://kick.com/sideral"
   },
   {
     "integrateid": 9,
     "avatarImage": "default3.webp",
-    "mmr": 4500,
-    "laneposition": 4,
-    "kickUrl": "https://kick.com/user9"
+    "mmr": 7150,
+    "laneposition": 2,
+    "name": "Pedrodoto",
+    "kickUrl": "https://kick.com/pedrodoto"
   },
   {
     "integrateid": 10,
     "avatarImage": "default4.webp",
-    "mmr": 4700,
-    "laneposition": 5,
-    "kickUrl": "https://kick.com/user10"
+    "mmr": 6900,
+    "laneposition": 4,
+    "name": "Demo",
+    "kickUrl": "https://kick.com/demo"
   },
   {
     "integrateid": 11,
     "avatarImage": "default2.webp",
-    "mmr": 5300,
+    "mmr": 7400,
     "laneposition": 1,
-    "kickUrl": "https://kick.com/user11"
+    "name": "Demo",
+    "kickUrl": "https://kick.com/demo"
   },
   {
     "integrateid": 12,
     "avatarImage": "default5.webp",
-    "mmr": 5200,
-    "laneposition": 2,
-    "kickUrl": "https://kick.com/user12"
+    "mmr": 6700,
+    "laneposition": 5,
+    "name": "Demo",
+    "kickUrl": "https://kick.com/demo"
   },
   {
     "integrateid": 13,
     "avatarImage": "default1.webp",
     "mmr": 6100,
     "laneposition": 3,
-    "kickUrl": "https://kick.com/user13"
+    "name": "Demo",
+    "kickUrl": "https://kick.com/demo"
   },
   {
     "integrateid": 14,
     "avatarImage": "default3.webp",
     "mmr": 4800,
     "laneposition": 4,
-    "kickUrl": "https://kick.com/user14"
+    "name": "Demo",
+    "kickUrl": "https://kick.com/demo"
   },
   {
     "integrateid": 15,
     "avatarImage": "default4.webp",
     "mmr": 5000,
     "laneposition": 5,
+    "name": "user15",
     "kickUrl": "https://kick.com/user15"
   },
   {
@@ -109,6 +124,7 @@
     "avatarImage": "default5.webp",
     "mmr": 5400,
     "laneposition": 1,
+    "name": "user16",
     "kickUrl": "https://kick.com/user16"
   },
   {
@@ -116,6 +132,7 @@
     "avatarImage": "default2.webp",
     "mmr": 5900,
     "laneposition": 2,
+    "name": "user17",
     "kickUrl": "https://kick.com/user17"
   },
   {
@@ -123,6 +140,7 @@
     "avatarImage": "default1.webp",
     "mmr": 5100,
     "laneposition": 3,
+    "name": "user18",
     "kickUrl": "https://kick.com/user18"
   },
   {
@@ -130,6 +148,7 @@
     "avatarImage": "default3.webp",
     "mmr": 6200,
     "laneposition": 4,
+    "name": "user19",
     "kickUrl": "https://kick.com/user19"
   },
   {
@@ -137,6 +156,7 @@
     "avatarImage": "default5.webp",
     "mmr": 5300,
     "laneposition": 5,
+    "name": "user20",
     "kickUrl": "https://kick.com/user20"
   },
   {
@@ -144,6 +164,7 @@
     "avatarImage": "default4.webp",
     "mmr": 4700,
     "laneposition": 1,
+    "name": "user21",
     "kickUrl": "https://kick.com/user21"
   },
   {
@@ -151,6 +172,7 @@
     "avatarImage": "default1.webp",
     "mmr": 5500,
     "laneposition": 2,
+    "name": "user22",
     "kickUrl": "https://kick.com/user22"
   },
   {
@@ -158,6 +180,7 @@
     "avatarImage": "default2.webp",
     "mmr": 4800,
     "laneposition": 3,
+    "name": "user23",
     "kickUrl": "https://kick.com/user23"
   },
   {
@@ -165,6 +188,7 @@
     "avatarImage": "default3.webp",
     "mmr": 5100,
     "laneposition": 4,
+    "name": "user24",
     "kickUrl": "https://kick.com/user24"
   },
   {
@@ -172,6 +196,7 @@
     "avatarImage": "default5.webp",
     "mmr": 6000,
     "laneposition": 5,
+    "name": "user25",
     "kickUrl": "https://kick.com/user25"
   },
   {
@@ -179,6 +204,7 @@
     "avatarImage": "default4.webp",
     "mmr": 5200,
     "laneposition": 1,
+    "name": "user26",
     "kickUrl": "https://kick.com/user26"
   },
   {
@@ -186,6 +212,7 @@
     "avatarImage": "default1.webp",
     "mmr": 5600,
     "laneposition": 2,
+    "name": "user27",
     "kickUrl": "https://kick.com/user27"
   },
   {
@@ -193,6 +220,7 @@
     "avatarImage": "default2.webp",
     "mmr": 4900,
     "laneposition": 3,
+    "name": "user28",
     "kickUrl": "https://kick.com/user28"
   },
   {
@@ -200,6 +228,7 @@
     "avatarImage": "default3.webp",
     "mmr": 5800,
     "laneposition": 4,
+    "name": "user29",
     "kickUrl": "https://kick.com/user29"
   },
   {
@@ -207,6 +236,7 @@
     "avatarImage": "default5.webp",
     "mmr": 5400,
     "laneposition": 5,
+    "name": "user30",
     "kickUrl": "https://kick.com/user30"
   },
   {
@@ -214,6 +244,7 @@
     "avatarImage": "default4.webp",
     "mmr": 4700,
     "laneposition": 1,
+    "name": "user31",
     "kickUrl": "https://kick.com/user31"
   },
   {
@@ -221,6 +252,7 @@
     "avatarImage": "default2.webp",
     "mmr": 5900,
     "laneposition": 2,
+    "name": "user32",
     "kickUrl": "https://kick.com/user32"
   },
   {
@@ -228,6 +260,7 @@
     "avatarImage": "default1.webp",
     "mmr": 5000,
     "laneposition": 3,
+    "name": "user33",
     "kickUrl": "https://kick.com/user33"
   },
   {
@@ -235,6 +268,7 @@
     "avatarImage": "default3.webp",
     "mmr": 6100,
     "laneposition": 4,
+    "name": "user34",
     "kickUrl": "https://kick.com/user34"
   },
   {
@@ -242,6 +276,7 @@
     "avatarImage": "default5.webp",
     "mmr": 5200,
     "laneposition": 5,
+    "name": "user35",
     "kickUrl": "https://kick.com/user35"
   },
   {
@@ -249,6 +284,7 @@
     "avatarImage": "default2.webp",
     "mmr": 5500,
     "laneposition": 1,
+    "name": "user36",
     "kickUrl": "https://kick.com/user36"
   },
   {
@@ -256,6 +292,7 @@
     "avatarImage": "default4.webp",
     "mmr": 4800,
     "laneposition": 2,
+    "name": "user37",
     "kickUrl": "https://kick.com/user37"
   },
   {
@@ -263,6 +300,7 @@
     "avatarImage": "default1.webp",
     "mmr": 5300,
     "laneposition": 3,
+    "name": "user38",
     "kickUrl": "https://kick.com/user38"
   },
   {
@@ -270,6 +308,7 @@
     "avatarImage": "default5.webp",
     "mmr": 5900,
     "laneposition": 4,
+    "name": "user39",
     "kickUrl": "https://kick.com/user39"
   },
   {

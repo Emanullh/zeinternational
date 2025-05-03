@@ -8,6 +8,7 @@ export interface Integrate {
   mmr: number
   laneposition: 1 | 2 | 3 | 4 | 5
   kickUrl: string
+  name: string
 }
 
 interface IntegratesState {

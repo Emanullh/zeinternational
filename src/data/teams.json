@@ -1,57 +1,57 @@
 [
   {
     "teamid": 1,
-    "teamlogo": "team_logo.webp",
-    "teamname": "Team 1",
+    "teamlogo": "team1.webp",
+    "teamname": "Mango Boys",
     "integrateIds": [1, 9, 10, 11, 12],
     "teamleaderid": 1
   },
   {
     "teamid": 2,
-    "teamlogo": "team_logo.webp",
-    "teamname": "Team 2",
+    "teamlogo": "team2.webp",
+    "teamname": "Rata Puta",
     "integrateIds": [2, 13, 14, 15, 16],
     "teamleaderid": 2
   },
   {
     "teamid": 3,
-    "teamlogo": "team_logo.webp",
-    "teamname": "Team 3",
+    "teamlogo": "team3.webp",
+    "teamname": "The Monstters",
     "integrateIds": [3, 17, 18, 19, 20],
     "teamleaderid": 3
   },
   {
     "teamid": 4,
-    "teamlogo": "team_logo.webp",
-    "teamname": "Team 4",
+    "teamlogo": "team4.webp",
+    "teamname": "Battle Zone",
     "integrateIds": [4, 21, 22, 23, 24],
     "teamleaderid": 4
   },
   {
     "teamid": 5,
-    "teamlogo": "team_logo.webp",
-    "teamname": "Team 5",
+    "teamlogo": "team5.webp",
+    "teamname": "Sin Anestesia",
     "integrateIds": [5, 25, 26, 27, 28],
     "teamleaderid": 5
   },
   {
     "teamid": 6,
-    "teamlogo": "team_logo.webp",
-    "teamname": "Team 6",
+    "teamlogo": "team6.webp",
+    "teamname": "Tumba Gigantes",
     "integrateIds": [6, 29, 30, 31, 32],
     "teamleaderid": 6
   },
   {
     "teamid": 7,
-    "teamlogo": "team_logo.webp",
-    "teamname": "Team 7",
+    "teamlogo": "team7.webp",
+    "teamname": "Bemboys",
     "integrateIds": [7, 33, 34, 35, 36],
     "teamleaderid": 7
   },
   {
     "teamid": 8,
-    "teamlogo": "team_logo.webp",
-    "teamname": "Team 8",
+    "teamlogo": "team8.webp",
+    "teamname": "Beba Army",
     "integrateIds": [8, 37, 38, 39, 40],
     "teamleaderid": 8
   }

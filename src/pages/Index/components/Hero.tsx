@@ -20,7 +20,7 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({
   backgroundImageUrl = hero,
   logoUrl = logo,
-  dateText = '24 DE MAYO',
+  dateText = '10 DE MAYO',
   locationLink = 'https://maps.app.goo.gl/JcyQCJghuztPJ9HV7',
   locationText = 'FINAL PRESENCIAL',
   twitchUrl = 'https://kick.com/elzeein',
@@ -46,7 +46,7 @@ const Hero: React.FC<HeroProps> = ({
         {selectedId ? (
           <div
             id="landing"
-            className="absolute top-0 flex w-full flex-col items-center py-16"
+            className="absolute md:top-30 top-0 flex w-full flex-col items-center py-16"
           >
             <TeamMembersCards />
           </div>
