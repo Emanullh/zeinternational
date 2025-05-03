@@ -20,6 +20,9 @@ importers:
       react-router:
         specifier: ^7.5.3
         version: 7.5.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      zustand:
+        specifier: ^5.0.4
+        version: 5.0.4(@types/react@19.1.2)(react@19.1.0)
     devDependencies:
       '@eslint/compat':
         specifier: ^1.2.8
@@ -3522,6 +3525,24 @@ packages:
     resolution: {integrity: sha512-cYVsTjKl8b+FrnidjibDWskAv7UKOfcwaVZdp/it9n1s9fU3IkgDbhdIRKCW4JDsAlECJY0ytoVPT3sK6kideA==}
     engines: {node: '>=18'}
 
+  zustand@5.0.4:
+    resolution: {integrity: sha512-39VFTN5InDtMd28ZhjLyuTnlytDr9HfwO512Ai4I8ZABCoyAj4F1+sr7sD1jP/+p7k77Iko0Pb5NhgBFDCX0kQ==}
+    engines: {node: '>=12.20.0'}
+    peerDependencies:
+      '@types/react': '>=18.0.0'
+      immer: '>=9.0.6'
+      react: '>=18.0.0'
+      use-sync-external-store: '>=1.2.0'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      immer:
+        optional: true
+      react:
+        optional: true
+      use-sync-external-store:
+        optional: true
+
 snapshots:
 
   '@adobe/css-tools@4.4.2': {}
@@ -6929,3 +6950,8 @@ snapshots:
   yocto-queue@0.1.0: {}
 
   yoctocolors-cjs@2.1.2: {}
+
+  zustand@5.0.4(@types/react@19.1.2)(react@19.1.0):
+    optionalDependencies:
+      '@types/react': 19.1.2
+      react: 19.1.0

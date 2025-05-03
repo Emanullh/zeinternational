@@ -1,0 +1,282 @@
+[
+  {
+    "integrateid": 1,
+    "avatarImage": "default3.webp",
+    "mmr": 5500,
+    "laneposition": 1,
+    "kickUrl": "https://kick.com/smash"
+  },
+  {
+    "integrateid": 2,
+    "avatarImage": "default1.webp",
+    "mmr": 6200,
+    "laneposition": 2,
+    "kickUrl": "https://kick.com/benjaz"
+  },
+  {
+    "integrateid": 3,
+    "avatarImage": "default5.webp",
+    "mmr": 4700,
+    "laneposition": 3,
+    "kickUrl": "https://kick.com/macarius"
+  },
+  {
+    "integrateid": 4,
+    "avatarImage": "default2.webp",
+    "mmr": 5100,
+    "laneposition": 4,
+    "kickUrl": "https://kick.com/iwo"
+  },
+  {
+    "integrateid": 5,
+    "avatarImage": "default4.webp",
+    "mmr": 5800,
+    "laneposition": 5,
+    "kickUrl": "https://kick.com/vann"
+  },
+  {
+    "integrateid": 6,
+    "avatarImage": "default1.webp",
+    "mmr": 4900,
+    "laneposition": 1,
+    "kickUrl": "https://kick.com/pato"
+  },
+  {
+    "integrateid": 7,
+    "avatarImage": "default5.webp",
+    "mmr": 5300,
+    "laneposition": 2,
+    "kickUrl": "https://kick.com/buti"
+  },
+  {
+    "integrateid": 8,
+    "avatarImage": "default2.webp",
+    "mmr": 6000,
+    "laneposition": 3,
+    "kickUrl": "https://kick.com/sideral"
+  },
+  {
+    "integrateid": 9,
+    "avatarImage": "default3.webp",
+    "mmr": 4500,
+    "laneposition": 4,
+    "kickUrl": "https://kick.com/user9"
+  },
+  {
+    "integrateid": 10,
+    "avatarImage": "default4.webp",
+    "mmr": 4700,
+    "laneposition": 5,
+    "kickUrl": "https://kick.com/user10"
+  },
+  {
+    "integrateid": 11,
+    "avatarImage": "default2.webp",
+    "mmr": 5300,
+    "laneposition": 1,
+    "kickUrl": "https://kick.com/user11"
+  },
+  {
+    "integrateid": 12,
+    "avatarImage": "default5.webp",
+    "mmr": 5200,
+    "laneposition": 2,
+    "kickUrl": "https://kick.com/user12"
+  },
+  {
+    "integrateid": 13,
+    "avatarImage": "default1.webp",
+    "mmr": 6100,
+    "laneposition": 3,
+    "kickUrl": "https://kick.com/user13"
+  },
+  {
+    "integrateid": 14,
+    "avatarImage": "default3.webp",
+    "mmr": 4800,
+    "laneposition": 4,
+    "kickUrl": "https://kick.com/user14"
+  },
+  {
+    "integrateid": 15,
+    "avatarImage": "default4.webp",
+    "mmr": 5000,
+    "laneposition": 5,
+    "kickUrl": "https://kick.com/user15"
+  },
+  {
+    "integrateid": 16,
+    "avatarImage": "default5.webp",
+    "mmr": 5400,
+    "laneposition": 1,
+    "kickUrl": "https://kick.com/user16"
+  },
+  {
+    "integrateid": 17,
+    "avatarImage": "default2.webp",
+    "mmr": 5900,
+    "laneposition": 2,
+    "kickUrl": "https://kick.com/user17"
+  },
+  {
+    "integrateid": 18,
+    "avatarImage": "default1.webp",
+    "mmr": 5100,
+    "laneposition": 3,
+    "kickUrl": "https://kick.com/user18"
+  },
+  {
+    "integrateid": 19,
+    "avatarImage": "default3.webp",
+    "mmr": 6200,
+    "laneposition": 4,
+    "kickUrl": "https://kick.com/user19"
+  },
+  {
+    "integrateid": 20,
+    "avatarImage": "default5.webp",
+    "mmr": 5300,
+    "laneposition": 5,
+    "kickUrl": "https://kick.com/user20"
+  },
+  {
+    "integrateid": 21,
+    "avatarImage": "default4.webp",
+    "mmr": 4700,
+    "laneposition": 1,
+    "kickUrl": "https://kick.com/user21"
+  },
+  {
+    "integrateid": 22,
+    "avatarImage": "default1.webp",
+    "mmr": 5500,
+    "laneposition": 2,
+    "kickUrl": "https://kick.com/user22"
+  },
+  {
+    "integrateid": 23,
+    "avatarImage": "default2.webp",
+    "mmr": 4800,
+    "laneposition": 3,
+    "kickUrl": "https://kick.com/user23"
+  },
+  {
+    "integrateid": 24,
+    "avatarImage": "default3.webp",
+    "mmr": 5100,
+    "laneposition": 4,
+    "kickUrl": "https://kick.com/user24"
+  },
+  {
+    "integrateid": 25,
+    "avatarImage": "default5.webp",
+    "mmr": 6000,
+    "laneposition": 5,
+    "kickUrl": "https://kick.com/user25"
+  },
+  {
+    "integrateid": 26,
+    "avatarImage": "default4.webp",
+    "mmr": 5200,
+    "laneposition": 1,
+    "kickUrl": "https://kick.com/user26"
+  },
+  {
+    "integrateid": 27,
+    "avatarImage": "default1.webp",
+    "mmr": 5600,
+    "laneposition": 2,
+    "kickUrl": "https://kick.com/user27"
+  },
+  {
+    "integrateid": 28,
+    "avatarImage": "default2.webp",
+    "mmr": 4900,
+    "laneposition": 3,
+    "kickUrl": "https://kick.com/user28"
+  },
+  {
+    "integrateid": 29,
+    "avatarImage": "default3.webp",
+    "mmr": 5800,
+    "laneposition": 4,
+    "kickUrl": "https://kick.com/user29"
+  },
+  {
+    "integrateid": 30,
+    "avatarImage": "default5.webp",
+    "mmr": 5400,
+    "laneposition": 5,
+    "kickUrl": "https://kick.com/user30"
+  },
+  {
+    "integrateid": 31,
+    "avatarImage": "default4.webp",
+    "mmr": 4700,
+    "laneposition": 1,
+    "kickUrl": "https://kick.com/user31"
+  },
+  {
+    "integrateid": 32,
+    "avatarImage": "default2.webp",
+    "mmr": 5900,
+    "laneposition": 2,
+    "kickUrl": "https://kick.com/user32"
+  },
+  {
+    "integrateid": 33,
+    "avatarImage": "default1.webp",
+    "mmr": 5000,
+    "laneposition": 3,
+    "kickUrl": "https://kick.com/user33"
+  },
+  {
+    "integrateid": 34,
+    "avatarImage": "default3.webp",
+    "mmr": 6100,
+    "laneposition": 4,
+    "kickUrl": "https://kick.com/user34"
+  },
+  {
+    "integrateid": 35,
+    "avatarImage": "default5.webp",
+    "mmr": 5200,
+    "laneposition": 5,
+    "kickUrl": "https://kick.com/user35"
+  },
+  {
+    "integrateid": 36,
+    "avatarImage": "default2.webp",
+    "mmr": 5500,
+    "laneposition": 1,
+    "kickUrl": "https://kick.com/user36"
+  },
+  {
+    "integrateid": 37,
+    "avatarImage": "default4.webp",
+    "mmr": 4800,
+    "laneposition": 2,
+    "kickUrl": "https://kick.com/user37"
+  },
+  {
+    "integrateid": 38,
+    "avatarImage": "default1.webp",
+    "mmr": 5300,
+    "laneposition": 3,
+    "kickUrl": "https://kick.com/user38"
+  },
+  {
+    "integrateid": 39,
+    "avatarImage": "default5.webp",
+    "mmr": 5900,
+    "laneposition": 4,
+    "kickUrl": "https://kick.com/user39"
+  },
+  {
+    "integrateid": 40,
+    "avatarImage": "default3.webp",
+    "mmr": 5000,
+    "laneposition": 5,
+    "kickUrl": "https://kick.com/user40"
+  }
+]

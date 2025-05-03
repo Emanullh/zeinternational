@@ -56,17 +56,40 @@ const Header: React.FC = () => {
         {/* Overlay */}
         <div
           id="overlay-menu"
-          className={`bg-theme-raisin-black/50 fixed inset-0 ${menuOpen ? 'block' : 'hidden'} h-screen md:hidden`}
+          className={`fixed inset-0 bg-theme-raisin-black/50 ${menuOpen ? 'block' : 'hidden'} md:hidden`}
+          onClick={() => setMenuOpen(false)}
         />
 
         {/* Navigation */}
         <nav
           id="navContent"
-          className={`bg-theme-french-mauve/90 fixed right-0 top-0 mx-auto h-screen max-w-6xl transform transition-transform duration-300 ease-out
-            ${menuOpen ? 'visible translate-x-0' : 'invisible translate-x-full'}
-            items-center justify-between space-y-2 px-6 pt-14 text-xs font-light backdrop-blur-2xl
-            md:visible md:relative md:flex md:!h-fit md:w-full md:translate-x-0 md:space-y-0 md:bg-transparent md:py-4 md:backdrop-blur-none lg:text-sm
-          `}
+          className={`
+    /* ---------- MÓVIL (slide) ---------- */
+    fixed top-0 right-0 z-40
+    h-screen w-64
+    bg-theme-french-mauve/90 backdrop-blur-2xl
+    transform transition-transform duration-300 ease-out
+    ${
+      menuOpen
+        ? 'translate-x-0 pointer-events-auto'
+        : 'translate-x-full pointer-events-none'
+    }
+
+    /* ---------- ESCRITORIO ---------- */
+    md:static
+    md:top-auto md:right-auto
+    md:h-auto md:w-full
+    md:bg-transparent md:backdrop-blur-none
+    md:transform-none md:translate-x-0 md:pointer-events-auto
+    md:flex md:items-center md:justify-between
+    md:px-6 md:py-4
+    md:space-y-0
+    lg:text-sm
+    md:max-w-6xl md:mx-auto
+    /* ---------- Contenido ---------- */
+    items-center justify-between space-y-2
+    px-6 pt-14 text-xs font-light
+  `}
         >
           <div className="flex flex-col justify-start space-y-2 md:flex-row md:gap-8 md:space-y-0 md:flex-grow">
             {/* Desktop logo as nav item */}

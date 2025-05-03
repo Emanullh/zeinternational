@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import participants from '../../../data/participants.json'
+import { useSelectedParticipantStore } from '@/stores/useSelectedParticipantStore'
 
 const InteractiveCardSelector: React.FC = () => {
-  const [selectedId, setSelectedId] = useState<string>('-1')
+  const selectedId =
+    useSelectedParticipantStore((s) => s.selectedId)?.toString() ?? '-1'
+  const setSelectedId = useSelectedParticipantStore((s) => s.setSelectedId)
   const [hoverId, setHoverId] = useState<string>('-1') // Nueva variable de estado
   const participants_path = 'src/assets/images/participants/'
 
@@ -19,7 +22,7 @@ const InteractiveCardSelector: React.FC = () => {
               ${isHovered ? 'z-20' : ''}
               ${isSelected ? 'z-10' : ''}
             `}
-            onClick={() => setSelectedId(p.id.toString())}
+            onClick={() => setSelectedId(p.id)}
             onMouseEnter={() => setHoverId(p.id.toString())} // Al entrar hover
             onMouseLeave={() => setHoverId('-1')} // Al salir hover
           >

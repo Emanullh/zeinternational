@@ -1,0 +1,50 @@
+[
+  {
+    "teamid": 1,
+    "teamlogo": "team1_logo.webp",
+    "integrateIds": [1, 9, 10, 11, 12],
+    "teamleaderid": 1
+  },
+  {
+    "teamid": 2,
+    "teamlogo": "team2_logo.webp",
+    "integrateIds": [2, 13, 14, 15, 16],
+    "teamleaderid": 2
+  },
+  {
+    "teamid": 3,
+    "teamlogo": "team3_logo.webp",
+    "integrateIds": [3, 17, 18, 19, 20],
+    "teamleaderid": 3
+  },
+  {
+    "teamid": 4,
+    "teamlogo": "team4_logo.webp",
+    "integrateIds": [4, 21, 22, 23, 24],
+    "teamleaderid": 4
+  },
+  {
+    "teamid": 5,
+    "teamlogo": "team5_logo.webp",
+    "integrateIds": [5, 25, 26, 27, 28],
+    "teamleaderid": 5
+  },
+  {
+    "teamid": 6,
+    "teamlogo": "team6_logo.webp",
+    "integrateIds": [6, 29, 30, 31, 32],
+    "teamleaderid": 6
+  },
+  {
+    "teamid": 7,
+    "teamlogo": "team7_logo.webp",
+    "integrateIds": [7, 33, 34, 35, 36],
+    "teamleaderid": 7
+  },
+  {
+    "teamid": 8,
+    "teamlogo": "team8_logo.webp",
+    "integrateIds": [8, 37, 38, 39, 40],
+    "teamleaderid": 8
+  }
+]

@@ -1,50 +1,10 @@
 [
-  {
-    "id": 1,
-    "name": "Smash",
-    "teamName": "Demo",
-    "image": "smash_grid.webp"
-  },
-  {
-    "id": 2,
-    "name": "Benjaz",
-    "teamName": "Demo",
-    "image": "benjaz_grid.webp"
-  },
-  {
-    "id": 3,
-    "name": "Macarius",
-    "teamName": "Demo",
-    "image": "macarius_grid.webp"
-  },
-  {
-    "id": 4,
-    "name": "Iwo",
-    "teamName": "Demo",
-    "image": "iwo_grid.webp"
-  },
-  {
-    "id": 5,
-    "name": "Vann",
-    "teamName": "Demo",
-    "image": "vann_grid.webp"
-  },
-  {
-    "id": 6,
-    "name": "Pato",
-    "teamName": "Demo",
-    "image": "pato_grid.webp"
-  },
-  {
-    "id": 7,
-    "name": "Buti",
-    "teamName": "Demo",
-    "image": "buti_grid.webp"
-  },
-  {
-    "id": 8,
-    "name": "Sideral",
-    "teamName": "Demo",
-    "image": "sideral_grid.webp"
-  }
+  { "id": 1, "name": "Smash", "teamId": 1, "image": "smash_grid.webp" },
+  { "id": 2, "name": "Benjaz", "teamId": 2, "image": "benjaz_grid.webp" },
+  { "id": 3, "name": "Macarius", "teamId": 3, "image": "macarius_grid.webp" },
+  { "id": 4, "name": "Iwo", "teamId": 4, "image": "iwo_grid.webp" },
+  { "id": 5, "name": "Vann", "teamId": 5, "image": "vann_grid.webp" },
+  { "id": 6, "name": "Pato", "teamId": 6, "image": "pato_grid.webp" },
+  { "id": 7, "name": "Buti", "teamId": 7, "image": "buti_grid.webp" },
+  { "id": 8, "name": "Sideral", "teamId": 8, "image": "sideral_grid.webp" }
 ]
