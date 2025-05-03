@@ -6,6 +6,7 @@ export interface Team {
   teamlogo: string
   integrateIds: number[]
   teamleaderid: number
+  teamname: string
 }
 
 interface TeamsState {
