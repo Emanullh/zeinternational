@@ -1,20 +1,14 @@
-import React, { memo, Suspense } from 'react'
+import React, { memo } from 'react'
 
-import Box from '../../components/Box'
-import Spinner from '../../components/Spinner'
-import logo from '../../logo.svg'
-
-import Counter from './Counter'
-import DocList from './DocList'
-import styles from './index.module.css'
 import Hero from './components/Hero'
+import Layout from '@/components/Layout/Layout'
 interface Props {}
 
 const Index: React.FC<Props> = memo(() => {
   return (
-    <>
+    <Layout>
       <Hero />
-    </>
+    </Layout>
   )
 })
 Index.displayName = 'Index'
