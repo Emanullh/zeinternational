@@ -2,7 +2,6 @@
 
 import React from 'react'
 import { motion, AnimatePresence } from 'motion/react'
-
 import { useSelectedParticipantStore } from '@/stores/useSelectedParticipantStore'
 import { useParticipantsStore } from '@/stores/useParticipantsStore'
 import { useTeamsStore } from '@/stores/useTeamsStore'
@@ -33,7 +32,6 @@ export const TeamMembersCards: React.FC = () => {
         .filter((x): x is Integrate & { name: string } => !!x)
     : []
 
-  // --- Variantes de Animación Tarjetas ---
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -56,9 +54,6 @@ export const TeamMembersCards: React.FC = () => {
       },
     },
   }
-  // --- Fin Variantes Tarjetas ---
-
-  // --- Variantes Animación Logo ---
   const logoVariants = {
     hidden: {
       opacity: 0,
@@ -76,9 +71,6 @@ export const TeamMembersCards: React.FC = () => {
       },
     },
   }
-  // --- Fin Variantes Logo ---
-
-  // --- Variantes Nombre Equipo ---
   const teamNameVariants = {
     hidden: { opacity: 0, x: -50 },
     visible: {
@@ -87,12 +79,10 @@ export const TeamMembersCards: React.FC = () => {
       transition: {
         duration: 0.5,
         ease: 'easeOut',
-        delay: 0.5, // Empieza un poco después del logo
+        delay: 0.5,
       },
     },
   }
-  // --- Fin Variantes Nombre Equipo ---
-  // 👇 NUEVAS VARIANTES PARA EL BRILLO 👇
   const backgroundBlurVariants = {
     hidden: {
       opacity: 0,
@@ -102,7 +92,7 @@ export const TeamMembersCards: React.FC = () => {
       transition: {
         duration: 0.6,
         ease: 'easeOut',
-        delay: 1.3, // Retraso para empezar después del logo/nombre
+        delay: 0.4, // Retraso para empezar después del logo/nombre
       },
     },
   }
@@ -125,100 +115,102 @@ export const TeamMembersCards: React.FC = () => {
           animate="visible"
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
+          className="w-full overflow-hidden md:overflow-visible px-0 flex justify-center"
+          style={{
+            paddingTop: '2rem',
+          }}
         >
-          {/* Team header: logo and uppercase name */}
-          {/* 👇 SE AÑADIÓ justify-center AQUÍ 👇 */}
-          <div className="relative flex items-center justify-center mb-10">
-            <div className="relative flex items-center w-fit">
-              {/* Elemento del Brillo: Ahora está DENTRO del wrapper */}
-              {/* 'left-0 right-0' ahora se refieren al ancho del wrapper */}
-              {/* 'z-0' lo pone detrás del logo y nombre */}
-              {/* 👇 Elemento del Brillo AHORA ES motion.div y usa variantes 👇 */}
-              <motion.div
-                className="absolute top-0 bottom-0 left-0 right-0 blur-2xl bg-red-500/50 z-0 pointer-events-none"
-                variants={backgroundBlurVariants}
-                // initial="hidden" // Heredado del padre
-                // animate="visible" // Heredado del padre
-              />
-
-              {/* Contenedor del Logo: Ya no necesita ser 'relative' para el brillo */}
-              {/* 'relative z-10' (opcional) asegura que esté sobre el brillo z-0 */}
-              <motion.div
-                className="w-24 h-auto mr-4 logo-container-shine relative z-10" // Añadido relative z-10
-                variants={logoVariants}
-              >
-                <img
-                  src={`/images/teams/${team.teamlogo}`}
-                  alt={team.teamname}
-                  className="w-full h-auto block"
+          <div className="w-full max-w-6xl relative">
+            <div className="relative flex items-center justify-center mb-10 pt-6">
+              <div className="relative flex items-center w-fit overflow-visible">
+                <motion.div
+                  className="absolute blur-3xl bg-red-500/50 z-0 pointer-events-none"
+                  variants={backgroundBlurVariants}
+                  style={{
+                    width: 'calc(100% + 8rem)',
+                    height: 'calc(100% + 4rem)',
+                    left: '-4rem',
+                    top: '-2rem',
+                    borderRadius: '50%',
+                  }}
                 />
-              </motion.div>
 
-              {/* Nombre del Equipo */}
-              {/* 'relative z-10' (opcional) asegura que esté sobre el brillo z-0 */}
-              <motion.h2
-                className="text-2xl font-bold uppercase text-white font-reaver relative z-10" // Añadido relative z-10
-                variants={teamNameVariants}
-              >
-                {team.teamname}
-              </motion.h2>
+                <motion.div
+                  className="w-24 h-auto mr-4 logo-container-shine relative z-10"
+                  variants={logoVariants}
+                >
+                  <img
+                    src={`/images/teams/${team.teamlogo}`}
+                    alt={team.teamname}
+                    className="w-full h-auto block"
+                  />
+                </motion.div>
+
+                <motion.h2
+                  className="text-2xl font-bold uppercase text-white font-reaver relative z-10"
+                  variants={teamNameVariants}
+                >
+                  {team.teamname}
+                </motion.h2>
+              </div>
             </div>
+
+            <motion.div
+              className="flex md:grid md:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-8 px-2 md:p-8 overflow-x-auto snap-x snap-mandatory w-full no-scrollbar md:overflow-visible"
+              variants={containerVariants}
+              style={{
+                overflowX: 'auto',
+                maxWidth: '100%',
+                boxSizing: 'border-box',
+                paddingTop: '2.5rem',
+                paddingBottom: '2rem',
+              }}
+            >
+              {members.map((m, index) => (
+                <motion.div
+                  key={m.integrateid}
+                  className="group bg-[#111111] rounded-xl p-4 md:p-6 flex flex-col items-center flex-shrink-0 w-[200px] md:w-auto snap-center mx-1 md:mx-0 mt-16"
+                  variants={itemVariants}
+                >
+                  <div className="relative w-40 h-40 -mt-28 overflow-hidden">
+                    <div className="z-0 transition-opacity duration-300 group-hover:opacity-0">
+                      <img
+                        className="w-full rounded-lg shadow-xl"
+                        src={`/images/integrates/${m.avatarImage}`}
+                        alt={m.name}
+                      />
+                    </div>
+                    <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-black bg-opacity-75 rounded-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100 cursor-pointer">
+                      <p className="text-sm text-white">MMR: {m.mmr}</p>
+                      <a
+                        href={m.kickUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-2 text-xs font-semibold text-[#ff6046] underline"
+                      >
+                        Ver en Kick
+                      </a>
+                    </div>
+
+                    <div className="absolute w-0 h-0 border-t-[12px] border-t-red-700 border-r-[12px] border-r-transparent top-1 left-1 z-20" />
+                    <div className="absolute w-0 h-0 border-b-[12px] border-b-red-700 border-l-[12px] border-l-transparent bottom-1 right-1 z-20" />
+                    <div className="absolute w-0 h-0 border-t-[12px] border-t-red-700 border-l-[12px] border-l-transparent top-1 right-1 z-20" />
+                    <div className="absolute w-0 h-0 border-b-[12px] border-b-red-700 border-r-[12px] border-r-transparent bottom-1 left-1 z-20" />
+                  </div>
+
+                  <h3 className="mt-4 text-lg font-black uppercase tracking-wider text-white font-notosans">
+                    {`'${m.name.toUpperCase()}'`}
+                  </h3>
+
+                  <span className="mt-1 text-xs font-semibold text-red-500 font-notosans">
+                    {m.integrateid === team.teamleaderid
+                      ? 'CAPITAN'
+                      : `POSICIÓN ${m.laneposition}`}
+                  </span>
+                </motion.div>
+              ))}
+            </motion.div>
           </div>
-
-          {/* Grid container con animación */}
-          <motion.div
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 p-8"
-            variants={containerVariants}
-          >
-            {members.map((m) => (
-              // Card individual con animación
-              <motion.div
-                key={m.integrateid}
-                className="group bg-[#111111] rounded-xl p-6 flex flex-col items-center"
-                variants={itemVariants}
-              >
-                {/* ... Contenido de la tarjeta sin cambios ... */}
-                <div className="relative w-40 h-40 -mt-16 overflow-hidden">
-                  {/* Avatar (hides on hover) */}
-                  <div className="z-0 transition-opacity duration-300 group-hover:opacity-0">
-                    <img
-                      className="w-full rounded-lg shadow-xl"
-                      src={`/images/integrates/${m.avatarImage}`}
-                      alt={m.name}
-                    />
-                  </div>
-                  {/* Overlay info (appears on hover) */}
-                  <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-black bg-opacity-75 rounded-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100 cursor-pointer">
-                    <p className="text-sm text-white">MMR: {m.mmr}</p>
-                    <a
-                      href={m.kickUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="mt-2 text-xs font-semibold text-[#ff6046] underline"
-                    >
-                      Ver en Kick
-                    </a>
-                  </div>
-
-                  {/* Decorative triangles */}
-                  <div className="absolute w-0 h-0 border-t-[12px] border-t-red-700 border-r-[12px] border-r-transparent top-1 left-1 z-20" />
-                  <div className="absolute w-0 h-0 border-b-[12px] border-b-red-700 border-l-[12px] border-l-transparent bottom-1 right-1 z-20" />
-                  <div className="absolute w-0 h-0 border-t-[12px] border-t-red-700 border-l-[12px] border-l-transparent top-1 right-1 z-20" />
-                  <div className="absolute w-0 h-0 border-b-[12px] border-b-red-700 border-r-[12px] border-r-transparent bottom-1 left-1 z-20" />
-                </div>
-
-                <h3 className="mt-4 text-lg font-black uppercase tracking-wider text-white font-notosans">
-                  {`'${m.name.toUpperCase()}'`}
-                </h3>
-
-                <span className="mt-1 text-xs font-semibold text-red-500 font-notosans">
-                  {m.integrateid === team.teamleaderid
-                    ? 'CAPITAN'
-                    : `POSICIÓN ${m.laneposition}`}
-                </span>
-              </motion.div>
-            ))}
-          </motion.div>
         </motion.div>
       )}
     </AnimatePresence>
