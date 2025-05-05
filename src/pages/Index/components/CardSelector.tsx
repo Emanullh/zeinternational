@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import participants from '../../../data/participants.json'
 import { useSelectedParticipantStore } from '@/stores/useSelectedParticipantStore'
 
@@ -8,6 +8,44 @@ const InteractiveCardSelector: React.FC = () => {
   const setSelectedId = useSelectedParticipantStore((s) => s.setSelectedId)
   const [hoverId, setHoverId] = useState<string>('-1')
   const participants_path = '/images/participants/'
+
+  // Efecto para mostrar hover automático en cada tarjeta
+  useEffect(() => {
+    // Solo ejecutar al montar el componente
+    if (selectedId === '-1') {
+      let currentIndex = 0
+      let timerId: NodeJS.Timeout
+
+      const showNextHover = () => {
+        if (currentIndex < participants.length) {
+          setHoverId(participants[currentIndex].id.toString())
+
+          // Mantener el hover por 150ms (reducido significativamente)
+          timerId = setTimeout(() => {
+            setHoverId('-1')
+
+            // Esperar solo 50ms antes de pasar al siguiente
+            setTimeout(() => {
+              currentIndex++
+              showNextHover()
+            }, 50)
+          }, 150)
+        } else {
+          // Al terminar con todos, volver al estado normal
+          setHoverId('-1')
+        }
+      }
+
+      // Iniciar la secuencia casi inmediatamente
+      const initialTimer = setTimeout(showNextHover, 100)
+
+      // Limpiar timers al desmontar
+      return () => {
+        clearTimeout(initialTimer)
+        clearTimeout(timerId)
+      }
+    }
+  }, [])
 
   return (
     // Añadido w-full aquí para restringir el ancho del contenedor scrollable
@@ -27,7 +65,7 @@ const InteractiveCardSelector: React.FC = () => {
             onMouseEnter={() => setHoverId(p.id.toString())}
             onMouseLeave={() => setHoverId('-1')}
           >
-            {/* 1) Fondo “normal” */}
+            {/* 1) Fondo "normal" */}
             <div
               className={`
                 w-full h-full
@@ -35,11 +73,12 @@ const InteractiveCardSelector: React.FC = () => {
                 filter grayscale brightness-75
                 transition-all duration-300
                 ${isSelected ? 'hidden' : 'group-hover:hidden'}
+                ${isHovered ? 'hidden' : ''}
               `}
               style={{ backgroundImage: `url(${participants_path}${p.image})` }}
             />
 
-            {/* 2) Fondo “expandido” */}
+            {/* 2) Fondo "expandido" */}
             <div
               className={`
                 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
@@ -49,6 +88,7 @@ const InteractiveCardSelector: React.FC = () => {
                 transition-all duration-300 ease-out origin-center
                 group-hover:opacity-100 group-hover:w-64 group-hover:h-80 group-hover:filter-none group-hover:pointer-events-auto group-hover:z-10
                 ${isSelected ? 'opacity-100 w-64 h-80 filter-none pointer-events-auto z-10' : ''}
+                ${isHovered ? 'opacity-100 w-64 h-80 filter-none pointer-events-auto z-10' : ''}
               `}
               style={{ backgroundImage: `url(${participants_path}${p.image})` }}
             />

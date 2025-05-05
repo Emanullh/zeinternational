@@ -154,7 +154,6 @@ export const TeamMembersCards: React.FC = () => {
                 </motion.h2>
               </div>
             </div>
-
             <motion.div
               className="flex md:grid md:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-8 px-2 md:p-8 overflow-x-auto snap-x snap-mandatory w-full no-scrollbar md:overflow-visible"
               variants={containerVariants}

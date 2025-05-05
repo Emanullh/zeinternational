@@ -15,6 +15,7 @@ interface HeroProps {
   locationText?: string
   twitchUrl?: string
   twitchText?: string
+  castersText?: string
 }
 
 const Hero: React.FC<HeroProps> = ({
@@ -23,6 +24,7 @@ const Hero: React.FC<HeroProps> = ({
   dateText = '10 DE MAYO',
   locationLink = 'https://maps.app.goo.gl/JcyQCJghuztPJ9HV7',
   locationText = 'FINAL PRESENCIAL',
+  castersText = 'CASTERS INTERNACIONALES',
   twitchUrl = 'https://kick.com/elzeein',
   twitchText = 'KICK.COM ELZEEIN',
 }) => {
@@ -86,7 +88,18 @@ const Hero: React.FC<HeroProps> = ({
 
               {/* Separator */}
               <div className="w-[80px] h-[3px] bg-[#ff6046] rounded-[1px]" />
-
+              <h2 className="animate-fade-in animate-delay-500">
+                <a
+                  href={locationLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block font-notosans tracking-wider text-xl sm:text-2xl md:text-3xl font-[900] leading-tight text-white"
+                >
+                  {castersText}
+                </a>
+              </h2>
+              {/* Separator */}
+              <div className="w-[80px] h-[3px] bg-[#ff6046] rounded-[1px]" />
               <a
                 href={twitchUrl}
                 target="_blank"
@@ -97,6 +110,12 @@ const Hero: React.FC<HeroProps> = ({
                 <br />
                 {twitchText.split(' ')[1]}
               </a>
+            </div>
+            <div className="text-center mt-20">
+              <h2 className="text-2xl md:text-5xl font-bold font-reaver text-white">
+                <span className="text-[#ff6046]">10 000</span> dolares de prize
+                pool
+              </h2>
             </div>
           </div>
         )}
