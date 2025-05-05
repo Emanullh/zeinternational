@@ -6,6 +6,7 @@ import { useSelectedParticipantStore } from '@/stores/useSelectedParticipantStor
 import { useParticipantsStore } from '@/stores/useParticipantsStore'
 import { useTeamsStore } from '@/stores/useTeamsStore'
 import { TeamMembersCards } from './TeamMembersCards'
+import { motion } from 'motion/react'
 
 interface HeroProps {
   backgroundImageUrl?: string
@@ -35,11 +36,26 @@ const Hero: React.FC<HeroProps> = ({
   const teamData = useTeamsStore((s) =>
     participant ? s.getById(participant.teamId) : undefined,
   )
+
+  // Define animation variants
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 20 },
+    visible: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.2,
+        duration: 0.5,
+        ease: 'easeOut',
+      },
+    }),
+  }
+
   return (
     <section className="relative flex min-h-screen w-full">
       {/* Background image and overlay */}
       <div
-        className="mask-fade-bottom animate-fade-in absolute inset-0 w-full bg-cover bg-center"
+        className="mask-fade-bottom absolute inset-0 w-full bg-cover bg-center"
         style={{ backgroundImage: `url('${backgroundImageUrl}')` }}
       />
       <div className="mask-fade-bottom absolute inset-0 w-full bg-black opacity-10" />
@@ -57,11 +73,23 @@ const Hero: React.FC<HeroProps> = ({
             id="landing"
             className="absolute top-0 flex w-full flex-col items-center py-16"
           >
-            <h3 className="animate-fade-in animate-delay-300 tracking mt-4 font-black leading-[100%] sm:text-xl font-radiance text-white">
+            <motion.h3
+              className="tracking mt-4 font-black leading-[100%] sm:text-xl font-radiance text-white"
+              initial="hidden"
+              animate="visible"
+              custom={0}
+              variants={fadeInUp}
+            >
               {dateText}
-            </h3>
+            </motion.h3>
 
-            <figure className="animate-fade-in relative">
+            <motion.figure
+              className="relative"
+              initial="hidden"
+              animate="visible"
+              custom={1}
+              variants={fadeInUp}
+            >
               <img
                 className="relative z-20 h-auto w-60 sm:w-80 md:w-96 lg:w-[30rem]"
                 src={logoUrl}
@@ -70,10 +98,15 @@ const Hero: React.FC<HeroProps> = ({
               {
                 <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-pink-400/60 blur-2xl" />
               }
-            </figure>
+            </motion.figure>
 
             <div className="relative z-10 mt-4 flex flex-col items-center space-y-4">
-              <h2 className="animate-fade-in animate-delay-500">
+              <motion.h2
+                initial="hidden"
+                animate="visible"
+                custom={2}
+                variants={fadeInUp}
+              >
                 <a
                   href={locationLink}
                   target="_blank"
@@ -84,11 +117,23 @@ const Hero: React.FC<HeroProps> = ({
                   <br />
                   {locationText.split(',')[1]}
                 </a>
-              </h2>
+              </motion.h2>
 
               {/* Separator */}
-              <div className="w-[80px] h-[3px] bg-[#ff6046] rounded-[1px]" />
-              <h2 className="animate-fade-in animate-delay-500">
+              <motion.div
+                className="w-[80px] h-[3px] bg-[#ff6046] rounded-[1px]"
+                initial="hidden"
+                animate="visible"
+                custom={3}
+                variants={fadeInUp}
+              />
+
+              <motion.h2
+                initial="hidden"
+                animate="visible"
+                custom={4}
+                variants={fadeInUp}
+              >
                 <a
                   href={locationLink}
                   target="_blank"
@@ -97,26 +142,45 @@ const Hero: React.FC<HeroProps> = ({
                 >
                   {castersText}
                 </a>
-              </h2>
+              </motion.h2>
+
               {/* Separator */}
-              <div className="w-[80px] h-[3px] bg-[#ff6046] rounded-[1px]" />
-              <a
+              <motion.div
+                className="w-[80px] h-[3px] bg-[#ff6046] rounded-[1px]"
+                initial="hidden"
+                animate="visible"
+                custom={5}
+                variants={fadeInUp}
+              />
+
+              <motion.a
                 href={twitchUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block font-notosans tracking-wider text-xl sm:text-2xl md:text-3xl font-[900] leading-tight text-white"
+                initial="hidden"
+                animate="visible"
+                custom={6}
+                variants={fadeInUp}
               >
                 {twitchText.split(' ')[0]}
                 <br />
                 {twitchText.split(' ')[1]}
-              </a>
+              </motion.a>
             </div>
-            <div className="text-center mt-20">
+
+            <motion.div
+              className="text-center mt-20"
+              initial="hidden"
+              animate="visible"
+              custom={7}
+              variants={fadeInUp}
+            >
               <h2 className="text-2xl md:text-5xl font-bold font-reaver text-white">
                 <span className="text-[#ff6046]">10 000</span> dolares de prize
                 pool
               </h2>
-            </div>
+            </motion.div>
           </div>
         )}
         {/* ←–– Card selector always lives here */}
