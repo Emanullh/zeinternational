@@ -19,6 +19,18 @@ interface HeroProps {
   castersText?: string
 }
 
+// Custom CSS for screen range visibility
+const customStyles = `
+  @media (min-width: 768px) and (max-width: 1440px) {
+    .hide-between-md-xl {
+      display: none !important;
+    }
+    .only-twitch-visible {
+      display: block !important;
+    }
+  }
+`
+
 const Hero: React.FC<HeroProps> = ({
   backgroundImageUrl = hero,
   logoUrl = logo,
@@ -53,6 +65,9 @@ const Hero: React.FC<HeroProps> = ({
 
   return (
     <section className="relative flex min-h-screen w-full">
+      {/* Add custom styles */}
+      <style>{customStyles}</style>
+
       {/* Background image and overlay */}
       <div
         className="mask-fade-bottom absolute inset-0 w-full bg-cover bg-center"
@@ -64,7 +79,7 @@ const Hero: React.FC<HeroProps> = ({
         {selectedId ? (
           <div
             id="landing"
-            className="absolute md:top-30 top-0 flex w-full flex-col items-center py-16"
+            className="absolute 2xl:top-30 top-0 flex w-full flex-col items-center py-16"
           >
             <TeamMembersCards />
           </div>
@@ -74,7 +89,7 @@ const Hero: React.FC<HeroProps> = ({
             className="absolute top-0 flex w-full flex-col items-center py-16"
           >
             <motion.h3
-              className="tracking mt-4 font-black leading-[100%] sm:text-xl font-radiance text-white"
+              className="tracking mt-4 font-black leading-[100%] text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl font-radiance text-white hide-between-md-xl"
               initial="hidden"
               animate="visible"
               custom={0}
@@ -91,7 +106,7 @@ const Hero: React.FC<HeroProps> = ({
               variants={fadeInUp}
             >
               <img
-                className="relative z-20 h-auto w-60 sm:w-80 md:w-96 lg:w-[30rem]"
+                className="relative z-20 h-auto w-40 xs:w-48 sm:w-64 md:w-80 lg:w-96"
                 src={logoUrl}
                 alt="Event Logo"
               />
@@ -106,12 +121,13 @@ const Hero: React.FC<HeroProps> = ({
                 animate="visible"
                 custom={2}
                 variants={fadeInUp}
+                className="hide-between-md-xl"
               >
                 <a
                   href={locationLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block font-notosans tracking-wider text-xl sm:text-2xl md:text-3xl font-[900] leading-tight text-white"
+                  className="inline-block font-notosans tracking-wider text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-[900] leading-tight text-white"
                 >
                   {locationText.split(',')[0]}
                   <br />
@@ -121,7 +137,7 @@ const Hero: React.FC<HeroProps> = ({
 
               {/* Separator */}
               <motion.div
-                className="w-[80px] h-[3px] bg-[#ff6046] rounded-[1px]"
+                className="w-[40px] sm:w-[50px] md:w-[60px] h-[1px] sm:h-[2px] md:h-[3px] bg-[#ff6046] rounded-[1px] hide-between-md-xl"
                 initial="hidden"
                 animate="visible"
                 custom={3}
@@ -133,12 +149,13 @@ const Hero: React.FC<HeroProps> = ({
                 animate="visible"
                 custom={4}
                 variants={fadeInUp}
+                className="hide-between-md-xl"
               >
                 <a
                   href={locationLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block font-notosans tracking-wider text-xl sm:text-2xl md:text-3xl font-[900] leading-tight text-white"
+                  className="inline-block font-notosans tracking-wider text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-[900] leading-tight text-white"
                 >
                   {castersText}
                 </a>
@@ -146,7 +163,7 @@ const Hero: React.FC<HeroProps> = ({
 
               {/* Separator */}
               <motion.div
-                className="w-[80px] h-[3px] bg-[#ff6046] rounded-[1px]"
+                className="w-[40px] sm:w-[50px] md:w-[60px] h-[1px] sm:h-[2px] md:h-[3px] bg-[#ff6046] rounded-[1px] hide-between-md-xl"
                 initial="hidden"
                 animate="visible"
                 custom={5}
@@ -157,7 +174,7 @@ const Hero: React.FC<HeroProps> = ({
                 href={twitchUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block font-notosans tracking-wider text-xl sm:text-2xl md:text-3xl font-[900] leading-tight text-white"
+                className="inline-block font-notosans tracking-wider text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-[900] leading-tight text-white only-twitch-visible"
                 initial="hidden"
                 animate="visible"
                 custom={6}
@@ -170,13 +187,13 @@ const Hero: React.FC<HeroProps> = ({
             </div>
 
             <motion.div
-              className="text-center mt-20"
+              className="text-center mt-8 sm:mt-10 md:mt-12 lg:mt-16 hide-between-md-xl"
               initial="hidden"
               animate="visible"
               custom={7}
               variants={fadeInUp}
             >
-              <h2 className="text-2xl md:text-5xl font-bold font-reaver text-white">
+              <h2 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold font-reaver text-white">
                 <span className="text-[#ff6046]">10 000</span> dolares de prize
                 pool
               </h2>
