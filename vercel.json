@@ -2,13 +2,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/index.html",
-      "has": [
-        {
-          "type": "missing",
-          "value": "file"
-        }
-      ]
+      "destination": "/index.html"
     }
   ]
 }
