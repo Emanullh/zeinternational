@@ -5,11 +5,7 @@ import Layout from '@/components/Layout/Layout'
 interface Props {}
 
 const Index: React.FC<Props> = memo(() => {
-  return (
-    <Layout>
-      <Hero />
-    </Layout>
-  )
+  return <Hero />
 })
 Index.displayName = 'Index'
 

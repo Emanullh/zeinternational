@@ -102,7 +102,7 @@ const Header: React.FC = () => {
 
             {/* Partidas link */}
             <a
-              href="#"
+              href="/matches"
               className="group inline-flex items-center relative py-1 tracking-wider "
             >
               <span

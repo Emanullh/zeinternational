@@ -1,0 +1,124 @@
+{
+  "groups": [
+    {
+      "id": 1,
+      "name": "GRUPO A",
+      "teamIds": [1, 2, 3, 4]
+    },
+    {
+      "id": 2,
+      "name": "GRUPO B",
+      "teamIds": [5, 6, 7, 8]
+    }
+  ],
+  "matches": [
+    {
+      "id": 1,
+      "groupId": 1,
+      "date": "2025-05-01",
+      "teamAId": 1,
+      "teamBId": 2,
+      "scoreA": 2,
+      "scoreB": 0
+    },
+    {
+      "id": 2,
+      "groupId": 1,
+      "date": "2025-05-01",
+      "teamAId": 3,
+      "teamBId": 4,
+      "scoreA": 1,
+      "scoreB": 2
+    },
+    {
+      "id": 3,
+      "groupId": 1,
+      "date": "2025-05-08",
+      "teamAId": 1,
+      "teamBId": 3,
+      "scoreA": 2,
+      "scoreB": 1
+    },
+    {
+      "id": 4,
+      "groupId": 1,
+      "date": "2025-05-08",
+      "teamAId": 2,
+      "teamBId": 4,
+      "scoreA": 0,
+      "scoreB": 1
+    },
+    {
+      "id": 5,
+      "groupId": 1,
+      "date": "2025-05-15",
+      "teamAId": 1,
+      "teamBId": 4,
+      "scoreA": 1,
+      "scoreB": 2
+    },
+    {
+      "id": 6,
+      "groupId": 1,
+      "date": "2025-05-15",
+      "teamAId": 2,
+      "teamBId": 3,
+      "scoreA": 0,
+      "scoreB": 1
+    },
+    {
+      "id": 7,
+      "groupId": 2,
+      "date": "2025-05-02",
+      "teamAId": 5,
+      "teamBId": 6,
+      "scoreA": 2,
+      "scoreB": 1
+    },
+    {
+      "id": 8,
+      "groupId": 2,
+      "date": "2025-05-02",
+      "teamAId": 7,
+      "teamBId": 8,
+      "scoreA": 2,
+      "scoreB": 0
+    },
+    {
+      "id": 9,
+      "groupId": 2,
+      "date": "2025-05-09",
+      "teamAId": 5,
+      "teamBId": 7,
+      "scoreA": 2,
+      "scoreB": 0
+    },
+    {
+      "id": 10,
+      "groupId": 2,
+      "date": "2025-05-09",
+      "teamAId": 6,
+      "teamBId": 8,
+      "scoreA": 2,
+      "scoreB": 0
+    },
+    {
+      "id": 11,
+      "groupId": 2,
+      "date": "2025-05-16",
+      "teamAId": 5,
+      "teamBId": 8,
+      "scoreA": 2,
+      "scoreB": 0
+    },
+    {
+      "id": 12,
+      "groupId": 2,
+      "date": "2025-05-16",
+      "teamAId": 6,
+      "teamBId": 7,
+      "scoreA": 1,
+      "scoreB": 0
+    }
+  ]
+}
