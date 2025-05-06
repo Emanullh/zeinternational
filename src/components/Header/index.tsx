@@ -1,10 +1,27 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import logo_nav from '@/assets/images/logo_nav.webp'
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 100)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   return (
-    <header className="fixed top-0 z-50 mx-auto flex h-20 w-full select-none items-center text-white sm:h-screen sm:overflow-hidden md:h-20">
+    <header
+      className={`fixed top-0 z-50 mx-auto flex h-20 w-full select-none items-center text-white sm:h-screen sm:overflow-hidden md:h-20 transition-all duration-300 ${
+        scrolled ? 'bg-black/80 backdrop-blur-md shadow-lg' : ''
+      }`}
+    >
       <div className="flex justify-between px-6 py-4 md:w-full">
         {/* Mobile logo */}
         <a
@@ -56,7 +73,7 @@ const Header: React.FC = () => {
         {/* Overlay */}
         <div
           id="overlay-menu"
-          className={`fixed inset-0 bg-theme-raisin-black/50 ${menuOpen ? 'block' : 'hidden'} md:hidden`}
+          className={`fixed inset-0 bg-[#2b2836]/50 ${menuOpen ? 'block' : 'hidden'} md:hidden`}
           onClick={() => setMenuOpen(false)}
         />
 
@@ -67,7 +84,7 @@ const Header: React.FC = () => {
     /* ---------- MÓVIL (slide) ---------- */
     fixed top-0 right-0 z-40
     h-screen w-64
-    bg-theme-french-mauve/90 backdrop-blur-2xl
+    bg-black
     transform transition-transform duration-300 ease-out
     ${
       menuOpen
@@ -79,7 +96,7 @@ const Header: React.FC = () => {
     md:static
     md:top-auto md:right-auto
     md:h-auto md:w-full
-    md:bg-transparent md:backdrop-blur-none
+    md:bg-transparent
     md:transform-none md:translate-x-0 md:pointer-events-auto
     md:flex md:items-center md:justify-between
     md:px-6 md:py-4
@@ -173,7 +190,7 @@ const Header: React.FC = () => {
                 className="font-goudytrajan neon-text relative inline-block font-bold"
               >
                 COMPRA LAS ENTRADAS
-                <span className="absolute  inset-0 top-3.5 mt-1 text-left text-[10px] leading-normal tracking-wide text-yellow-500 md:text-center">
+                <span className="absolute inset-0 top-3.5 mt-1 text-left text-[10px] leading-normal tracking-wide text-yellow-500 md:text-center">
                   PROXIMAMENTE
                 </span>
               </span>
