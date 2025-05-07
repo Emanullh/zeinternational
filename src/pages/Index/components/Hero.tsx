@@ -7,6 +7,7 @@ import { useParticipantsStore } from '@/stores/useParticipantsStore'
 import { useTeamsStore } from '@/stores/useTeamsStore'
 import { TeamMembersCards } from './TeamMembersCards'
 import { motion } from 'motion/react'
+import { useIntegrates } from '@/hooks/useIntegrates'
 
 interface HeroProps {
   backgroundImageUrl?: string
@@ -41,6 +42,7 @@ const Hero: React.FC<HeroProps> = ({
   twitchUrl = 'https://kick.com/elzeein',
   twitchText = 'KICK.COM ELZEEIN',
 }) => {
+  const { isLoading, error } = useIntegrates();
   const selectedId = useSelectedParticipantStore((s) => s.selectedId)
   const participant = useParticipantsStore((s) =>
     selectedId != null ? s.getById(selectedId) : undefined,
@@ -152,7 +154,7 @@ const Hero: React.FC<HeroProps> = ({
                 className="hide-between-md-xl"
               >
                 <a
-                  href={locationLink}
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block font-notosans tracking-wider text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-[900] leading-tight text-white"

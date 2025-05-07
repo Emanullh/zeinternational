@@ -18,7 +18,7 @@ export const TeamMembersCards: React.FC = () => {
   const allIntegrates = useIntegratesStore((s) => s.integrates)
   const allParticipants = useParticipantsStore((s) => s.participants)
 
-  const members: (Integrate & { name: string })[] = team
+  const members: (Integrate)[] = team
     ? team.integrateIds
         .map((id) => {
           const integ = allIntegrates.find((i) => i.integrateid === id)
@@ -29,7 +29,7 @@ export const TeamMembersCards: React.FC = () => {
             name: p ? p.name : integ.name || `Player ${id}`,
           }
         })
-        .filter((x): x is Integrate & { name: string } => !!x)
+        .filter((x): x is Integrate => !!x)
     : []
 
   const containerVariants = {
@@ -171,13 +171,25 @@ export const TeamMembersCards: React.FC = () => {
                   className="group bg-[#111111] rounded-xl p-4 md:p-6 flex flex-col items-center flex-shrink-0 w-[200px] md:w-auto snap-center mx-1 md:mx-0 mt-16"
                   variants={itemVariants}
                 >
-                  <div className="relative w-40 h-40 -mt-28 overflow-hidden">
-                    <div className="z-0 transition-opacity duration-300 group-hover:opacity-0">
-                      <img
-                        className="w-full rounded-lg shadow-xl"
-                        src={`/images/integrates/${m.avatarImage}`}
-                        alt={m.name}
-                      />
+                  <div className="relative w-40 h-40 -mt-28 overflow-hidden rounded-xl">
+                    <div className="z-0 transition-opacity duration-300 group-hover:opacity-0 rounded-xl">
+                      <div className="relative rounded-xl">
+                        <div className="absolute inset-0 bg-white rounded-xl" />
+                        <div 
+                          className="w-full h-[160px] shadow-xl relative z-10 bg-cover bg-center bg-no-repeat rounded-xl"
+                          style={{ backgroundImage: `url(/images/integrates/${m.avatarImage})` }}
+                          role="img"
+                          aria-label={m.name}
+                        />
+                        {m.isLive && (
+                          <>
+                            <div className="absolute inset-0 border-3 rounded-xl border-green-500 z-20" />
+                            <span className="absolute bottom-0.5 left-1/2 -translate-x-1/2 transform bg-green-500 px-2 py-1 text-[10px] font-bold capitalize leading-[1.2] z-20">
+                              LIVE
+                            </span>
+                          </>
+                        )}
+                      </div>
                     </div>
                     <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-black bg-opacity-75 rounded-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100 cursor-pointer">
                       <p className="text-sm text-white">MMR: {m.mmr}</p>
@@ -191,10 +203,10 @@ export const TeamMembersCards: React.FC = () => {
                       </a>
                     </div>
 
-                    <div className="absolute w-0 h-0 border-t-[12px] border-t-red-700 border-r-[12px] border-r-transparent top-1 left-1 z-20" />
-                    <div className="absolute w-0 h-0 border-b-[12px] border-b-red-700 border-l-[12px] border-l-transparent bottom-1 right-1 z-20" />
-                    <div className="absolute w-0 h-0 border-t-[12px] border-t-red-700 border-l-[12px] border-l-transparent top-1 right-1 z-20" />
-                    <div className="absolute w-0 h-0 border-b-[12px] border-b-red-700 border-r-[12px] border-r-transparent bottom-1 left-1 z-20" />
+                    <div className="absolute w-0 h-0 border-t-[12px] border-t-red-700 border-r-[12px] border-r-transparent top-1 left-1 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute w-0 h-0 border-b-[12px] border-b-red-700 border-l-[12px] border-l-transparent bottom-1 right-1 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute w-0 h-0 border-t-[12px] border-t-red-700 border-l-[12px] border-l-transparent top-1 right-1 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute w-0 h-0 border-b-[12px] border-b-red-700 border-r-[12px] border-r-transparent bottom-1 left-1 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
 
                   <h3 className="mt-4 text-lg font-black uppercase tracking-wider text-white font-notosans">

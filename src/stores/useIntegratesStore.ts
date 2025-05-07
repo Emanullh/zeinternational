@@ -1,25 +1,28 @@
 import { create } from 'zustand'
-import integratesDataRaw from '../data/integrates.json'
 
 // 1) keep your interface as-is
 export interface Integrate {
   integrateid: number
   avatarImage: string
   mmr: number
-  laneposition: 1 | 2 | 3 | 4 | 5
+  laneposition: number
   kickUrl: string
   name: string
+  isLive?: boolean
+  stream_title?: string | null
 }
 
 interface IntegratesState {
   integrates: Integrate[]
   getById: (integrateid: number) => Integrate | undefined
+  setIntegrates: (integrates: Integrate[]) => void
 }
 
-// 2) assert the raw JSON to your strict type
-const integratesData = integratesDataRaw as unknown as Integrate[]
-
-export const useIntegratesStore = create<IntegratesState>(() => ({
-  integrates: integratesData,
-  getById: (id) => integratesData.find((i) => i.integrateid === id),
+const store = create<IntegratesState>((set) => ({
+  integrates: [],
+  getById: (id: number): Integrate | undefined => 
+    store.getState().integrates.find((i: Integrate) => i.integrateid === id),
+  setIntegrates: (integrates: Integrate[]) => set({ integrates }),
 }))
+
+export const useIntegratesStore = store

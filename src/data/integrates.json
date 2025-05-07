@@ -1,322 +1,361 @@
 [
   {
     "integrateid": 1,
-    "avatarImage": "default3.webp",
+    "avatarImage": "smash_kick.webp",
     "mmr": 11000,
     "laneposition": 3,
     "name": "Smash",
-    "kickUrl": "https://kick.com/smash"
+    "kickUrl": "https://kick.com/smashdota",
+    "slug": "smashdota"
   },
   {
     "integrateid": 2,
-    "avatarImage": "default1.webp",
-    "mmr": 6200,
+    "avatarImage": "benjaz_kick.webp",
+    "mmr": 9000,
     "laneposition": 3,
     "name": "Benjaz",
-    "kickUrl": "https://kick.com/benjaz"
+    "kickUrl": "https://kick.com/benjaz",
+    "slug": "benjaz"
   },
   {
     "integrateid": 3,
-    "avatarImage": "default5.webp",
-    "mmr": 4700,
+    "avatarImage": "macarius_kick.webp",
+    "mmr": 1800,
     "laneposition": 5,
     "name": "Macarius",
-    "kickUrl": "https://kick.com/macarius"
+    "kickUrl": "https://kick.com/elmacarius",
+    "slug": "elmacarius"
   },
   {
     "integrateid": 4,
-    "avatarImage": "default2.webp",
-    "mmr": 5100,
+    "avatarImage": "iwobeka_kick.webp",
+    "mmr": 7000,
     "laneposition": 1,
     "name": "Iwo",
-    "kickUrl": "https://kick.com/iwo"
+    "kickUrl": "https://kick.com/iwobeka",
+    "slug": "iwobeka"
   },
   {
     "integrateid": 5,
-    "avatarImage": "default4.webp",
-    "mmr": 5800,
+    "avatarImage": "vanngg_kick.webp",
+    "mmr": 11600,
     "laneposition": 1,
     "name": "Vann",
-    "kickUrl": "https://kick.com/vann"
+    "kickUrl": "https://kick.com/vanngg",
+    "slug": "vanngg"
   },
   {
     "integrateid": 6,
-    "avatarImage": "default1.webp",
-    "mmr": 4900,
+    "avatarImage": "pato_kick.webp",
+    "mmr": 6500,
     "laneposition": 2,
     "name": "Pato",
-    "kickUrl": "https://kick.com/pato"
+    "kickUrl": "https://kick.com/elpatoparodl",
+    "slug": "elpatoparodl"
   },
   {
     "integrateid": 7,
-    "avatarImage": "default5.webp",
-    "mmr": 5300,
+    "avatarImage": "buti_kick.webp",
+    "mmr": 2200,
     "laneposition": 5,
     "name": "Buti",
-    "kickUrl": "https://kick.com/buti"
+    "kickUrl": "https://kick.com/butisito",
+    "slug": "butisito"
   },
   {
     "integrateid": 8,
-    "avatarImage": "default2.webp",
-    "mmr": 6000,
+    "avatarImage": "sideral_kick.webp",
+    "mmr": 6500,
     "laneposition": 3,
     "name": "Sideral",
-    "kickUrl": "https://kick.com/sideral"
+    "kickUrl": "https://kick.com/sideral",
+    "slug": "sideral"
   },
   {
     "integrateid": 9,
-    "avatarImage": "default3.webp",
+    "avatarImage": "pedrodoto_kick.webp",
     "mmr": 8500,
     "laneposition": 1,
     "name": "Pedrodoto",
-    "kickUrl": "https://kick.com/pedrodoto"
+    "kickUrl": "https://kick.com/pedrodoto",
+    "slug": "pedrodoto"
   },
   {
     "integrateid": 10,
-    "avatarImage": "default4.webp",
+    "avatarImage": "serranogamer_kick.webp",
     "mmr": 4500,
     "laneposition": 2,
     "name": "SerranoGamer",
-    "kickUrl": "https://kick.com/demo"
+    "kickUrl": "https://kick.com/serranogamer",
+    "slug": "serranogamer"
   },
   {
     "integrateid": 11,
-    "avatarImage": "default2.webp",
+    "avatarImage": "payasitazing_kick.webp",
     "mmr": 1200,
     "laneposition": 1,
     "name": "PayasitaZing",
-    "kickUrl": "https://kick.com/demo"
+    "kickUrl": "https://kick.com/payasitazing",
+    "slug": "payasitazing"
   },
   {
     "integrateid": 12,
-    "avatarImage": "default5.webp",
+    "avatarImage": "eu_vtuber_kick.webp",
     "mmr": 7500,
     "laneposition": 5,
     "name": "eu-vtuber",
-    "kickUrl": "https://kick.com/demo"
+    "kickUrl": "https://kick.com/eu-vtuber",
+    "slug": "eu-vtuber"
   },
   {
     "integrateid": 13,
-    "avatarImage": "default1.webp",
+    "avatarImage": "capigg_kick.webp",
     "mmr": 8000,
     "laneposition": 2,
     "name": "CapiGG",
-    "kickUrl": "https://kick.com/demo"
+    "kickUrl": "https://kick.com/capigg",
+    "slug": "capigg"
   },
   {
     "integrateid": 14,
-    "avatarImage": "default3.webp",
+    "avatarImage": "jericho_kick.webp",
     "mmr": 7900,
     "laneposition": 4,
     "name": "Jericho",
-    "kickUrl": "https://kick.com/demo"
+    "kickUrl": "https://kick.com/jerichodota",
+    "slug": "jerichodota"
   },
   {
     "integrateid": 15,
-    "avatarImage": "default4.webp",
+    "avatarImage": "default1.webp",
     "mmr": 7700,
     "laneposition": 1,
     "name": "Kid",
-    "kickUrl": "https://kick.com/user15"
+    "kickUrl": "https://kick.com/kiddota2",
+    "slug": "kiddota2"
   },
   {
     "integrateid": 16,
-    "avatarImage": "default5.webp",
+    "avatarImage": "hoxhi_kick.webp",
     "mmr": 400,
     "laneposition": 5,
-    "name": "Hochi",
-    "kickUrl": "https://kick.com/user16"
+    "name": "Hoxhi",
+    "kickUrl": "https://kick.com/hoxhi",
+    "slug": "hoxhi"
   },
   {
     "integrateid": 17,
-    "avatarImage": "default2.webp",
+    "avatarImage": "parker_kick.webp",
     "mmr": 13500,
     "laneposition": 1,
     "name": "Parker",
-    "kickUrl": "https://kick.com/user17"
+    "kickUrl": "https://kick.com/parkerdota",
+    "slug": "parkerdota"
   },
   {
     "integrateid": 18,
-    "avatarImage": "default1.webp",
+    "avatarImage": "noah_kick.webp",
     "mmr": 10000,
     "laneposition": 1,
     "name": "Noah",
-    "kickUrl": "https://kick.com/user18"
+    "kickUrl": "https://kick.com/noah_god",
+    "slug": "noah_god"
   },
   {
     "integrateid": 19,
-    "avatarImage": "default3.webp",
+    "avatarImage": "yugigamers_kick.webp",
     "mmr": 3800,
     "laneposition": 3,
-    "name": "YugiGamers",
-    "kickUrl": "https://kick.com/user19"
+    "name": "YugiGamerS",
+    "kickUrl": "https://kick.com/yugigamers",
+    "slug": "yugigamers"
   },
   {
     "integrateid": 20,
-    "avatarImage": "default5.webp",
+    "avatarImage": "dotagaymer_kick.webp",
     "mmr": 3800,
     "laneposition": 4,
     "name": "DotaGAYmer",
-    "kickUrl": "https://kick.com/user20"
+    "kickUrl": "https://kick.com/dotagaymer",
+    "slug": "dotagaymer"
   },
   {
     "integrateid": 21,
-    "avatarImage": "default4.webp",
+    "avatarImage": "roxanny_kick.webp",
     "mmr": 1500,
     "laneposition": 5,
     "name": "Roxanny",
-    "kickUrl": "https://kick.com/user21"
+    "kickUrl": "https://kick.com/roxanny",
+    "slug": "roxanny"
   },
   {
     "integrateid": 22,
-    "avatarImage": "default1.webp",
+    "avatarImage": "yarlionelys_kick.webp",
     "mmr": 6500,
     "laneposition": 3,
     "name": "Yarlionelys",
-    "kickUrl": "https://kick.com/user22"
+    "kickUrl": "https://kick.com/yairlonelys",
+    "slug": "yairlonelys"
   },
   {
     "integrateid": 23,
-    "avatarImage": "default2.webp",
+    "avatarImage": "falco_kick.webp",
     "mmr": 4400,
     "laneposition": 4,
     "name": "FalcoStyle",
-    "kickUrl": "https://kick.com/user23"
+    "kickUrl": "https://kick.com/falcostyle",
+    "slug": "falcostyle"
   },
   {
     "integrateid": 24,
-    "avatarImage": "default3.webp",
+    "avatarImage": "leostyle_kick.webp",
     "mmr": 12500,
     "laneposition": 1,
     "name": "Leostyle",
-    "kickUrl": "https://kick.com/user24"
+    "kickUrl": "https://kick.com/leostyledota",
+    "slug": "leostyledota"
   },
   {
     "integrateid": 25,
-    "avatarImage": "default5.webp",
+    "avatarImage": "stinger_kick.webp",
     "mmr": 10500,
     "laneposition": 2,
     "name": "Stinger",
-    "kickUrl": "https://kick.com/user25"
+    "kickUrl": "https://kick.com/stingerdota",
+    "slug": "stingerdota"
   },
   {
     "integrateid": 26,
-    "avatarImage": "default4.webp",
+    "avatarImage": "playgd_kick.webp",
     "mmr": 600,
     "laneposition": 3,
     "name": "Playgd",
-    "kickUrl": "https://kick.com/user26"
+    "kickUrl": "https://kick.com/playgd",
+    "slug": "playgd"
   },
   {
     "integrateid": 27,
-    "avatarImage": "default1.webp",
+    "avatarImage": "sonic4d_kick.webp",
     "mmr": 2400,
     "laneposition": 4,
     "name": "sonic4d",
-    "kickUrl": "https://kick.com/user27"
+    "kickUrl": "https://kick.com/sonic4d",
+    "slug": "sonic4d"
   },
   {
     "integrateid": 28,
-    "avatarImage": "default2.webp",
+    "avatarImage": "gelatita_kick.webp",
     "mmr": 2500,
     "laneposition": 5,
     "name": "gelatita",
-    "kickUrl": "https://kick.com/user28"
+    "kickUrl": "https://kick.com/gelatita",
+    "slug": "gelatita"
   },
   {
     "integrateid": 29,
-    "avatarImage": "default3.webp",
+    "avatarImage": "harvy_kick.webp",
     "mmr": 9000,
     "laneposition": 1,
     "name": "Harvy",
-    "kickUrl": "https://kick.com/user29"
+    "kickUrl": "https://kick.com/harvymd",
+    "slug": "harvymd"
   },
   {
     "integrateid": 30,
-    "avatarImage": "default5.webp",
+    "avatarImage": "default3.webp",
     "mmr": 8500,
     "laneposition": 3,
     "name": "Blazz",
-    "kickUrl": "https://kick.com/user30"
+    "kickUrl": "#"
   },
   {
     "integrateid": 31,
-    "avatarImage": "default4.webp",
+    "avatarImage": "kiwichan_kick.webp",
     "mmr": 3000,
     "laneposition": 4,
     "name": "Kiwichan",
-    "kickUrl": "https://kick.com/user31"
+    "kickUrl": "https://kick.com/kiwi_chanvt",
+    "slug": "kiwi_chanvt"
   },
   {
     "integrateid": 32,
-    "avatarImage": "default2.webp",
+    "avatarImage": "danaaax_kick.webp",
     "mmr": 5000,
     "laneposition": 5,
     "name": "Danaaax",
-    "kickUrl": "https://kick.com/user32"
+    "kickUrl": "https://kick.com/danaaax",
+    "slug": "danaaax"
   },
   {
     "integrateid": 33,
-    "avatarImage": "default1.webp",
+    "avatarImage": "minoz_kick.webp",
     "mmr": 13000,
     "laneposition": 1,
     "name": "Minoz",
-    "kickUrl": "https://kick.com/user33"
+    "kickUrl": "https://kick.com/kotaromnzdota",
+    "slug": "kotaromnzdota"
   },
   {
     "integrateid": 34,
-    "avatarImage": "default3.webp",
+    "avatarImage": "tio_clinkz_kick.webp",
     "mmr": 6000,
     "laneposition": 4,
     "name": "TioClinkz",
-    "kickUrl": "https://kick.com/user34"
+    "kickUrl": "https://kick.com/eltioclinkz",
+    "slug": "eltioclinkz"
   },
   {
     "integrateid": 35,
-    "avatarImage": "default5.webp",
+    "avatarImage": "techisor_kick.webp",
     "mmr": 6600,
     "laneposition": 3,
     "name": "Techisor",
-    "kickUrl": "https://kick.com/user35"
+    "kickUrl": "https://kick.com/techiessenior",
+    "slug": "techiessenior"
   },
   {
     "integrateid": 36,
-    "avatarImage": "default2.webp",
+    "avatarImage": "pgod_kick.webp",
     "mmr": 5000,
     "laneposition": 2,
     "name": "Pgod",
-    "kickUrl": "https://kick.com/user36"
+    "kickUrl": "https://kick.com/pgod",
+    "slug": "pgod"
   },
   {
     "integrateid": 37,
-    "avatarImage": "default4.webp",
+    "avatarImage": "daad_kick.webp",
     "mmr": 13400,
     "laneposition": 1,
     "name": "Daad",
-    "kickUrl": "https://kick.com/user37"
+    "kickUrl": "https://kick.com/daadota2",
+    "slug": "daadota2"
   },
   {
     "integrateid": 38,
-    "avatarImage": "default1.webp",
+    "avatarImage": "masoku_kick.webp",
     "mmr": 7800,
     "laneposition": 4,
     "name": "Masoku",
-    "kickUrl": "https://kick.com/user38"
+    "kickUrl": "https://kick.com/masokugg",
+    "slug": "masokugg"
   },
   {
     "integrateid": 39,
-    "avatarImage": "default5.webp",
+    "avatarImage": "cosmecito_kick.webp",
     "mmr": 2600,
     "laneposition": 3,
     "name": "Cosmecito",
-    "kickUrl": "https://kick.com/user39"
+    "kickUrl": "https://kick.com/cosmecito",
+    "slug": "cosmecito"
   },
   {
     "integrateid": 40,
-    "avatarImage": "default3.webp",
+    "avatarImage": "runtito_kick.webp",
     "mmr": 2500,
     "laneposition": 5,
     "name": "Runtito",
-    "kickUrl": "https://kick.com/user40"
+    "kickUrl": "https://kick.com/runtito",
+    "slug": "runtito"
   }
 ]
