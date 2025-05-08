@@ -29,11 +29,11 @@ const Sponsors: React.FC = () => {
   };
 
   return (
-    <section className="w-full py-16 bg-black/50">
-      <div className="container mx-auto px-4">
+    <section className="w-full py-16 md:min-h-[50vh] bg-black/50 md:overflow-y-hidden">
+      <div className="container mx-auto px-4 h-full flex flex-col">
         <div className="flex flex-col items-center mb-12">
           <motion.h2 
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-center text-white uppercase tracking-wider font-notosans"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white uppercase tracking-[0.2em] font-notosans"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5 }}
@@ -42,7 +42,7 @@ const Sponsors: React.FC = () => {
           </motion.h2>
 
           <motion.div
-            className="w-full max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px] h-[1px] sm:h-[2px] md:h-[3px] bg-[#ff6046] rounded-[1px] mt-4"
+            className="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[400px] h-[2px] sm:h-[3px] md:h-[4px] lg:h-[5px] bg-[#ff6046] rounded-[1px] mt-4"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -51,7 +51,7 @@ const Sponsors: React.FC = () => {
 
         <motion.div
           ref={ref}
-          className="relative flex justify-center items-center max-w-[2000px] mx-auto"
+          className="relative flex justify-center items-center max-w-[2000px] mx-auto flex-1"
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}

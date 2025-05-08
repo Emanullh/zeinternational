@@ -83,11 +83,11 @@ const Casters: React.FC = () => {
   };
 
   return (
-    <section className="w-full py-16 bg-black/50">
-      <div className="container mx-auto px-4">
+    <section className="w-full py-16 md:min-h-[90vh] bg-black/50 md:overflow-y-hidden">
+      <div className="container mx-auto px-4 h-full flex flex-col">
         <div className="flex flex-col items-center mb-12">
           <motion.h2 
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-center text-white uppercase tracking-wider font-notosans"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white uppercase tracking-[0.2em] font-notosans"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5 }}
@@ -96,7 +96,7 @@ const Casters: React.FC = () => {
           </motion.h2>
 
           <motion.div
-            className="w-full max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px] h-[1px] sm:h-[2px] md:h-[3px] bg-[#ff6046] rounded-[1px] mt-4"
+            className="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[400px] h-[2px] sm:h-[3px] md:h-[4px] lg:h-[5px] bg-[#ff6046] rounded-[1px] mt-4"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -105,7 +105,7 @@ const Casters: React.FC = () => {
 
         <motion.div
           ref={ref}
-          className="relative flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-0 max-w-[2000px] mx-auto"
+          className="relative flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-0 max-w-[2000px] mx-auto flex-1"
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
@@ -124,7 +124,7 @@ const Casters: React.FC = () => {
               variants={itemVariants}
               onClick={() => handleCasterClick(caster.id)}
             >
-              <div className="relative w-[300px] sm:w-[400px] lg:w-[450px] h-[420px] sm:h-[560px] lg:h-[630px]">
+              <div className="relative w-[300px] sm:w-[400px] lg:w-[350px] xl:w-[400px] h-auto">
                 {/* Blurred background image */}
                 <div className="absolute inset-0 -z-10">
                   <div className="relative w-full h-full scale-105">
@@ -174,24 +174,24 @@ const Casters: React.FC = () => {
 
         {/* TTS Section */}
         {selectedCaster && (
-          <div className="mt-8 lg:mt-12 max-w-2xl mx-auto">
-            <div className="bg-black/30 p-6 rounded-lg">
+          <div className="mt-8 lg:mt-12 w-full">
+            <div className="bg-black/30 p-6 rounded-lg flex flex-col items-center">
               <textarea
                 ref={textareaRef}
                 value={ttsText}
                 onChange={handleTextChange}
                 placeholder="Escribe lo que quieres que diga el caster... (máximo 30 palabras)"
-                className="w-full h-32 bg-black/50 text-white p-4 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-[#ff6046]"
+                className="w-[60%] min-w-[300px] h-[4.5rem] bg-black/50 text-white p-4 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-[#ff6046]"
               />
-              <div className="text-xs text-gray-400 mt-1 text-right">
+              <div className="text-xs text-gray-400 mt-1 text-right w-[60%] min-w-[300px]">
                 {wordCount}/30 palabras
               </div>
               {error && (
-                <div className="mt-2 text-red-500 text-sm">
+                <div className="mt-2 text-red-500 text-sm w-[60%] min-w-[300px]">
                   {error}
                 </div>
               )}
-              <div className="mt-4 flex justify-end">
+              <div className="mt-4 flex justify-end w-[60%] min-w-[300px]">
                 <button
                   onClick={handlePlayTTS}
                   disabled={isLoading || !ttsText}
