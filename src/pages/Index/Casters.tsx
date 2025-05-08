@@ -101,6 +101,16 @@ const Casters: React.FC = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           />
+
+          <motion.p
+            className="text-xs sm:text-sm text-gray-400 text-center mt-4 font-notosans"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
+            Clickea tu caster favorito y observa la magia
+          </motion.p>
+
         </div>
 
         <motion.div
