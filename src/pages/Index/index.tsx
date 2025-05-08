@@ -1,11 +1,17 @@
 import React, { memo } from 'react'
 
-import Hero from './components/Hero'
-import Layout from '@/components/Layout/Layout'
+import Hero from './Hero'
+import Casters from './Casters'
+
 interface Props {}
 
 const Index: React.FC<Props> = memo(() => {
-  return <Hero />
+  return (
+    <>
+      <Hero />
+      <Casters />
+    </>
+  )
 })
 Index.displayName = 'Index'
 
