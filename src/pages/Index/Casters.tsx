@@ -13,16 +13,28 @@ const Casters: React.FC = () => {
   const [ttsText, setTtsText] = useState('');
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleCasterClick = (casterId: string) => {
     setSelectedCaster(casterId);
     setTtsText('');
     setAudioUrl(null);
+    setError(null);
     // Scroll to textarea when clicking on a caster
     if (textareaRef.current) {
       textareaRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  const handleTextChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    const text = e.target.value;
+    const words = text.trim().split(/\s+/).filter(word => word.length > 0);
+    if (words.length <= 30) {
+      setTtsText(text);
+    }
+  };
+
+  const wordCount = ttsText.trim().split(/\s+/).filter(word => word.length > 0).length;
 
   const handlePlayTTS = async () => {
     if (!selectedCaster || !ttsText) return;
@@ -32,11 +44,17 @@ const Casters: React.FC = () => {
 
     setIsLoading(true);
     setAudioUrl(null); // Clear previous audio
+    setError(null); // Clear previous error
     try {
-      const url = await generateTTS(ttsText, caster.voiceId);
-      setAudioUrl(url);
+      const { audioUrl: url, error: ttsError } = await generateTTS(ttsText, caster.voiceId);
+      if (ttsError) {
+        setError(ttsError.details.originalError);
+      } else {
+        setAudioUrl(url);
+      }
     } catch (error) {
       console.error('Error generating TTS:', error);
+      setError('Ocurrió un error al generar el audio. Por favor, inténtalo de nuevo.');
     } finally {
       setIsLoading(false);
     }
@@ -161,10 +179,18 @@ const Casters: React.FC = () => {
               <textarea
                 ref={textareaRef}
                 value={ttsText}
-                onChange={(e) => setTtsText(e.target.value)}
-                placeholder="Escribe lo que quieres que diga el caster..."
+                onChange={handleTextChange}
+                placeholder="Escribe lo que quieres que diga el caster... (máximo 30 palabras)"
                 className="w-full h-32 bg-black/50 text-white p-4 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-[#ff6046]"
               />
+              <div className="text-xs text-gray-400 mt-1 text-right">
+                {wordCount}/30 palabras
+              </div>
+              {error && (
+                <div className="mt-2 text-red-500 text-sm">
+                  {error}
+                </div>
+              )}
               <div className="mt-4 flex justify-end">
                 <button
                   onClick={handlePlayTTS}
