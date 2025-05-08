@@ -22,7 +22,14 @@ const Casters: React.FC = () => {
     setError(null);
     // Scroll to textarea when clicking on a caster
     if (textareaRef.current) {
-      textareaRef.current.scrollIntoView({ behavior: 'smooth' });
+      const headerHeight = 80; // Approximate header height
+      const elementPosition = textareaRef.current.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - (window.innerHeight / 2) + headerHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   };
 
