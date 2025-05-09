@@ -49,7 +49,7 @@ const InteractiveCardSelector: React.FC = () => {
 
   return (
     // Añadido w-full aquí para restringir el ancho del contenedor scrollable
-    <div className="w-full flex flex-nowrap overflow-x-auto p-4 md:flex-wrap md:justify-center md:space-x-0 md:overflow-visible">
+    <div className="w-full flex flex-nowrap overflow-x-auto p-4 xl:flex-wrap xl:justify-center xl:space-x-0 xl:overflow-visible">
       {participants.map((p) => {
         const isSelected = selectedId === p.id.toString()
         const isHovered = hoverId === p.id.toString()
@@ -57,7 +57,7 @@ const InteractiveCardSelector: React.FC = () => {
           <div
             key={p.id}
             className={`
-              relative flex-shrink-0 md:w-30 w-24 md:h-70 h-56 overflow-visible group cursor-pointer z-0 
+              relative flex-shrink-0 xl:w-30 w-24 xl:h-70 h-56 overflow-visible group cursor-pointer z-0 
               ${isHovered ? 'z-20' : ''}
               ${isSelected ? 'z-10' : ''}
             `}

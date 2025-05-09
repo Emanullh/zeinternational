@@ -116,12 +116,9 @@ export const TeamMembersCards: React.FC = () => {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
           className="w-full overflow-hidden md:overflow-visible px-0 flex justify-center"
-          style={{
-            paddingTop: '2rem',
-          }}
         >
           <div className="w-full max-w-6xl relative">
-            <div className="relative flex items-center justify-center mb-10 pt-6">
+            <div className="relative flex items-center justify-center mb-10 pt-6 lg:pt-0 lg:mb-1 2xl:mb-10 2xl:pt-6">
               <div className="relative flex items-center w-fit overflow-visible">
                 <motion.div
                   className="absolute blur-3xl bg-red-500/50 z-0 pointer-events-none"
@@ -155,7 +152,7 @@ export const TeamMembersCards: React.FC = () => {
               </div>
             </div>
             <motion.div
-              className="flex md:grid md:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-8 px-2 md:p-8 overflow-x-auto snap-x snap-mandatory w-full no-scrollbar md:overflow-visible"
+              className="flex 2xl:grid 2xl:grid-cols-5 gap-4 md:gap-8 px-2 md:p-8 overflow-x-auto snap-x snap-mandatory w-full no-scrollbar 2xl:overflow-visible"
               variants={containerVariants}
               style={{
                 overflowX: 'auto',

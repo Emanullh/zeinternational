@@ -243,7 +243,7 @@ const Casters: React.FC = () => {
                 </button>
               </div>
               {audioUrl && (
-                <div className="mt-4">
+                <div className="mt-4 flex justify-end w-[60%] min-w-[300px]">
                   <audio controls className="w-full">
                     <source src={audioUrl} type="audio/mpeg" />
                     Tu navegador no soporta el elemento de audio.
