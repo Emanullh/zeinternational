@@ -119,69 +119,76 @@ export default function LiveMatch() {
 
         {/* Players */}
         <div className="flex flex-col gap-4 mb-8">
-          <div className="flex flex-row gap-4 justify-center">
-            {radiant.map((player) => (
-              <div
-                key={player.steamAccountId}
-                className={`relative flex flex-col items-center w-44 rounded-xl border border-[#333] shadow-lg p-3 ${getGradient(player.heroId, true)} backdrop-blur-md`}
-              >
-                <img
-                  className="w-20 h-14 object-contain rounded mb-2 border border-[#222] bg-black/40"
-                  src={getHeroImage(player.heroId)}
-                  alt={player.hero.displayName}
-                />
-                <div className="text-xs text-gray-300 font-notosans mb-1">{player.hero.displayName}</div>
-                <div className="text-base font-bold text-white font-reaver mb-1 truncate w-full text-center">{player.steamAccount.name}</div>
-                <div className="flex flex-row items-center justify-center gap-2 text-xs text-gray-400 font-notosans mb-1">
-                  <span className="text-green-400 font-bold">{player.numKills}</span>
-                  <span>/</span>
-                  <span className="text-red-400 font-bold">{player.numDeaths}</span>
-                  <span>/</span>
-                  <span className="text-blue-400 font-bold">{player.numAssists}</span>
+          {/* Radiant Players */}
+          <div className="relative">
+            <div className="flex flex-row gap-4 overflow-x-auto pb-4 px-1 md:justify-center md:overflow-x-visible">
+              {radiant.map((player) => (
+                <div
+                  key={player.steamAccountId}
+                  className={`relative flex flex-col items-center w-44 flex-shrink-0 rounded-xl border border-[#333] shadow-lg p-3 ${getGradient(player.heroId, true)} backdrop-blur-md`}
+                >
+                  <img
+                    className="w-20 h-14 object-contain rounded mb-2 border border-[#222] bg-black/40"
+                    src={getHeroImage(player.heroId)}
+                    alt={player.hero.displayName}
+                  />
+                  <div className="text-xs text-gray-300 font-notosans mb-1">{player.hero.displayName}</div>
+                  <div className="text-base font-bold text-white font-reaver mb-1 truncate w-full text-center">{player.steamAccount.name}</div>
+                  <div className="flex flex-row items-center justify-center gap-2 text-xs text-gray-400 font-notosans mb-1">
+                    <span className="text-green-400 font-bold">{player.numKills}</span>
+                    <span>/</span>
+                    <span className="text-red-400 font-bold">{player.numDeaths}</span>
+                    <span>/</span>
+                    <span className="text-blue-400 font-bold">{player.numAssists}</span>
+                  </div>
+                  <div className="flex flex-row items-center justify-center gap-2 text-xs text-yellow-300 font-bold font-reaver">
+                    <img src="/images/dota2/gold.png" alt="gold" className="w-4 h-4 inline-block mr-1" />
+                    {player.networth.toLocaleString()}
+                    <span className="ml-2 text-white">Lvl {player.level}</span>
+                  </div>
+                  <div className="flex flex-row items-center justify-center gap-2 text-xs text-gray-400 font-notosans mt-1">
+                    <span>LH: {player.numLastHits}</span>
+                    <span>DN: {player.numDenies}</span>
+                  </div>
                 </div>
-                <div className="flex flex-row items-center justify-center gap-2 text-xs text-yellow-300 font-bold font-reaver">
-                  <img src="/images/dota2/gold.png" alt="gold" className="w-4 h-4 inline-block mr-1" />
-                  {player.networth.toLocaleString()}
-                  <span className="ml-2 text-white">Lvl {player.level}</span>
-                </div>
-                <div className="flex flex-row items-center justify-center gap-2 text-xs text-gray-400 font-notosans mt-1">
-                  <span>LH: {player.numLastHits}</span>
-                  <span>DN: {player.numDenies}</span>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-          <div className="flex flex-row gap-4 justify-center">
-            {dire.map((player) => (
-              <div
-                key={player.steamAccountId}
-                className={`relative flex flex-col items-center w-44 rounded-xl border border-[#333] shadow-lg p-3 ${getGradient(player.heroId, false)} backdrop-blur-md`}
-              >
-                <img
-                  className="w-20 h-14 object-contain rounded mb-2 border border-[#222] bg-black/40"
-                  src={getHeroImage(player.heroId)}
-                  alt={player.hero.displayName}
-                />
-                <div className="text-xs text-gray-300 font-notosans mb-1">{player.hero.displayName}</div>
-                <div className="text-base font-bold text-white font-reaver mb-1 truncate w-full text-center">{player.steamAccount.name}</div>
-                <div className="flex flex-row items-center justify-center gap-2 text-xs text-gray-400 font-notosans mb-1">
-                  <span className="text-green-400 font-bold">{player.numKills}</span>
-                  <span>/</span>
-                  <span className="text-red-400 font-bold">{player.numDeaths}</span>
-                  <span>/</span>
-                  <span className="text-blue-400 font-bold">{player.numAssists}</span>
+
+          {/* Dire Players */}
+          <div className="relative">
+            <div className="flex flex-row gap-4 overflow-x-auto pb-4 px-1 md:justify-center md:overflow-x-visible">
+              {dire.map((player) => (
+                <div
+                  key={player.steamAccountId}
+                  className={`relative flex flex-col items-center w-44 flex-shrink-0 rounded-xl border border-[#333] shadow-lg p-3 ${getGradient(player.heroId, false)} backdrop-blur-md`}
+                >
+                  <img
+                    className="w-20 h-14 object-contain rounded mb-2 border border-[#222] bg-black/40"
+                    src={getHeroImage(player.heroId)}
+                    alt={player.hero.displayName}
+                  />
+                  <div className="text-xs text-gray-300 font-notosans mb-1">{player.hero.displayName}</div>
+                  <div className="text-base font-bold text-white font-reaver mb-1 truncate w-full text-center">{player.steamAccount.name}</div>
+                  <div className="flex flex-row items-center justify-center gap-2 text-xs text-gray-400 font-notosans mb-1">
+                    <span className="text-green-400 font-bold">{player.numKills}</span>
+                    <span>/</span>
+                    <span className="text-red-400 font-bold">{player.numDeaths}</span>
+                    <span>/</span>
+                    <span className="text-blue-400 font-bold">{player.numAssists}</span>
+                  </div>
+                  <div className="flex flex-row items-center justify-center gap-2 text-xs text-yellow-300 font-bold font-reaver">
+                    <img src="/images/dota2/gold.png" alt="gold" className="w-4 h-4 inline-block mr-1" />
+                    {player.networth.toLocaleString()}
+                    <span className="ml-2 text-white">Lvl {player.level}</span>
+                  </div>
+                  <div className="flex flex-row items-center justify-center gap-2 text-xs text-gray-400 font-notosans mt-1">
+                    <span>LH: {player.numLastHits}</span>
+                    <span>DN: {player.numDenies}</span>
+                  </div>
                 </div>
-                <div className="flex flex-row items-center justify-center gap-2 text-xs text-yellow-300 font-bold font-reaver">
-                  <img src="/images/dota2/gold.png" alt="gold" className="w-4 h-4 inline-block mr-1" />
-                  {player.networth.toLocaleString()}
-                  <span className="ml-2 text-white">Lvl {player.level}</span>
-                </div>
-                <div className="flex flex-row items-center justify-center gap-2 text-xs text-gray-400 font-notosans mt-1">
-                  <span>LH: {player.numLastHits}</span>
-                  <span>DN: {player.numDenies}</span>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
 
