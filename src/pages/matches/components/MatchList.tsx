@@ -20,6 +20,8 @@ const MatchCard = ({ match }: { match: Match }) => {
       month: 'short',
       day: 'numeric',
       year: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
     })
   }
 
@@ -63,7 +65,7 @@ const MatchCard = ({ match }: { match: Match }) => {
               {match.scoreB}
             </span>
           </div>
-          <span className="text-gray-400 text-xs">Marcador Final</span>
+          <span className="text-gray-400 text-xs text-center">Marcador Final</span>
         </div>
 
         <div className="flex flex-col items-center w-2/5">
