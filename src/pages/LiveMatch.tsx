@@ -82,10 +82,20 @@ export default function LiveMatch() {
 
   return (
     <div className="min-h-screen text-white pb-8 pt-24">
+      {/* Stream Container */}
+      <div className="relative w-full max-w-[1280px] mx-auto mb-8">
+        <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
+          <iframe 
+            src="https://player.kick.com/elzeein" 
+            className="absolute top-0 left-0 w-full h-full"
+            frameBorder="0" 
+            scrolling="no" 
+            allowFullScreen={true}
+          />
+        </div>
+      </div>
+
       <div className="container mx-auto">
-        <h1 className="text-3xl font-black text-center mb-8 text-[#ff6046] uppercase tracking-wide font-reaver">
-          Partida en vivo
-        </h1>
       
         {/* Match Info */}
         <div className="bg-black/60 rounded-lg p-4 mb-8 border border-[#222]">
@@ -95,7 +105,7 @@ export default function LiveMatch() {
             <span>Espectadores: {match.spectators}</span>
           </div>
           <div className="flex items-center justify-between text-sm text-gray-400">
-            <span>Rango promedio: {match.averageRank}</span>
+            <span>Rango promedio: {match.averageRank} mmr</span>
             <span>Delay: {match.delay}s</span>
             <span>Ventaja Radiant: {match.radiantLead.toLocaleString()}</span>
           </div>

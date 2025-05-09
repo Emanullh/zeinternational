@@ -142,7 +142,7 @@ const Header: React.FC = () => {
                   group-hover:after:scale-x-100
                 "
               >
-                PARTIDAS
+                FASE DE GRUPOS
               </span>
             </a>
 
