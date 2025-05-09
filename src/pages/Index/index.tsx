@@ -11,7 +11,6 @@ const Index: React.FC<Props> = memo(() => {
     <>
       <Hero />
       <Casters />
-      <Sponsors />
     </>
   )
 })
