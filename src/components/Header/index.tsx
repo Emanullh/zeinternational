@@ -146,7 +146,36 @@ const Header: React.FC = () => {
               </span>
             </a>
 
-            {/* Estadisticas link */}
+            {/* Partida en vivo link */}
+            <a
+              href="/live-match"
+              className="group inline-flex items-center relative py-1 tracking-wider "
+            >
+              <span
+                className="
+                  font-goudytrajan
+                  font-bold
+                  relative
+                  after:content-['']
+                  after:absolute
+                  after:-bottom-0.5
+                  after:left-0
+                  after:w-full
+                  after:h-[2px]
+                  after:bg-[#ff6046]
+                  after:origin-center
+                  after:scale-x-0
+                  after:transition-transform
+                  after:duration-300
+                  after:ease-out
+                  group-hover:after:scale-x-100
+                "
+              >
+                PARTIDA EN VIVO
+              </span>
+            </a>
+
+            {/* Estadisticas link 
             <a
               href="#"
               className="group inline-flex items-center relative py-1 tracking-wider"
@@ -173,9 +202,9 @@ const Header: React.FC = () => {
               >
                 ESTADÍSTICAS
               </span>
-            </a>
+            </a>*/}
           </div>
-
+          
           {/* Buy tickets */}
           <div>
             <a

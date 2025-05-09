@@ -1,0 +1,1 @@
+export const DOTA_IMAGE_CDN = import.meta.env.VITE_IMAGE_CDN || 'https://cdn.cloudflare.steamstatic.com'; 

@@ -1,0 +1,311 @@
+{
+  "data": {
+    "live": {
+      "match": {
+        "matchId": 8285736872,
+        "gameMinute": 29,
+        "radiantScore": 20,
+        "direScore": 46,
+        "leagueId": null,
+        "league": null,
+        "delay": 120,
+        "spectators": 199,
+        "averageRank": 8191,
+        "radiantLead": -22979,
+        "lobbyType": "RANKED",
+        "gameTime": 1795,
+        "completed": false,
+        "radiantTeam": null,
+        "direTeam": null,
+        "gameMode": "ALL_PICK_RANKED",
+        "gameState": "GAME_IN_PROGRESS",
+        "playbackData": {
+          "pickBans": [
+            {
+              "isPick": true,
+              "heroId": 38,
+              "order": 0
+            },
+            {
+              "isPick": true,
+              "heroId": 37,
+              "order": 1
+            },
+            {
+              "isPick": true,
+              "heroId": 99,
+              "order": 2
+            },
+            {
+              "isPick": true,
+              "heroId": 49,
+              "order": 3
+            },
+            {
+              "isPick": true,
+              "heroId": 46,
+              "order": 4
+            },
+            {
+              "isPick": true,
+              "heroId": 119,
+              "order": 5
+            },
+            {
+              "isPick": true,
+              "heroId": 17,
+              "order": 6
+            },
+            {
+              "isPick": true,
+              "heroId": 104,
+              "order": 7
+            },
+            {
+              "isPick": true,
+              "heroId": 29,
+              "order": 8
+            },
+            {
+              "isPick": true,
+              "heroId": 66,
+              "order": 9
+            }
+          ]
+        },
+        "players": [
+          {
+            "steamAccountId": 902238054,
+            "steamAccount": {
+              "name": "Ping-Chun-Long"
+            },
+            "heroId": 38,
+            "hero": {
+              "id": 38,
+              "name": "npc_dota_hero_beastmaster",
+              "displayName": "Beastmaster"
+            },
+            "isRadiant": true,
+            "numKills": 3,
+            "numDeaths": 11,
+            "numAssists": 8,
+            "numLastHits": 139,
+            "numDenies": 0,
+            "gold": 286,
+            "networth": 9411,
+            "goldPerMinute": 324,
+            "experiencePerMinute": null,
+            "level": 17
+          },
+          {
+            "steamAccountId": 198549023,
+            "steamAccount": {
+              "name": "Detective Diglett"
+            },
+            "heroId": 37,
+            "hero": {
+              "id": 37,
+              "name": "npc_dota_hero_warlock",
+              "displayName": "Warlock"
+            },
+            "isRadiant": true,
+            "numKills": 3,
+            "numDeaths": 8,
+            "numAssists": 12,
+            "numLastHits": 41,
+            "numDenies": 0,
+            "gold": 542,
+            "networth": 8217,
+            "goldPerMinute": 283,
+            "experiencePerMinute": null,
+            "level": 13
+          },
+          {
+            "steamAccountId": 45319072,
+            "steamAccount": {
+              "name": "DesTruKto898"
+            },
+            "heroId": 99,
+            "hero": {
+              "id": 99,
+              "name": "npc_dota_hero_bristleback",
+              "displayName": "Bristleback"
+            },
+            "isRadiant": true,
+            "numKills": 4,
+            "numDeaths": 10,
+            "numAssists": 7,
+            "numLastHits": 143,
+            "numDenies": 6,
+            "gold": 494,
+            "networth": 10249,
+            "goldPerMinute": 353,
+            "experiencePerMinute": null,
+            "level": 17
+          },
+          {
+            "steamAccountId": 207541978,
+            "steamAccount": {
+              "name": "Tsuki"
+            },
+            "heroId": 49,
+            "hero": {
+              "id": 49,
+              "name": "npc_dota_hero_dragon_knight",
+              "displayName": "Dragon Knight"
+            },
+            "isRadiant": true,
+            "numKills": 4,
+            "numDeaths": 8,
+            "numAssists": 7,
+            "numLastHits": 193,
+            "numDenies": 5,
+            "gold": 1260,
+            "networth": 13190,
+            "goldPerMinute": 454,
+            "experiencePerMinute": null,
+            "level": 19
+          },
+          {
+            "steamAccountId": 485698203,
+            "steamAccount": {
+              "name": "love u Claudia"
+            },
+            "heroId": 46,
+            "hero": {
+              "id": 46,
+              "name": "npc_dota_hero_templar_assassin",
+              "displayName": "Templar Assassin"
+            },
+            "isRadiant": true,
+            "numKills": 4,
+            "numDeaths": 9,
+            "numAssists": 6,
+            "numLastHits": 209,
+            "numDenies": 14,
+            "gold": 852,
+            "networth": 13452,
+            "goldPerMinute": 463,
+            "experiencePerMinute": null,
+            "level": 18
+          },
+          {
+            "steamAccountId": 180732389,
+            "steamAccount": {
+              "name": "a1"
+            },
+            "heroId": 119,
+            "hero": {
+              "id": 119,
+              "name": "npc_dota_hero_dark_willow",
+              "displayName": "Dark Willow"
+            },
+            "isRadiant": false,
+            "numKills": 2,
+            "numDeaths": 4,
+            "numAssists": 26,
+            "numLastHits": 49,
+            "numDenies": 2,
+            "gold": 1109,
+            "networth": 10484,
+            "goldPerMinute": 361,
+            "experiencePerMinute": null,
+            "level": 18
+          },
+          {
+            "steamAccountId": 1209301544,
+            "steamAccount": {
+              "name": "fuera mrd no quiero tu caramelo"
+            },
+            "heroId": 17,
+            "hero": {
+              "id": 17,
+              "name": "npc_dota_hero_storm_spirit",
+              "displayName": "Storm Spirit"
+            },
+            "isRadiant": false,
+            "numKills": 6,
+            "numDeaths": 4,
+            "numAssists": 19,
+            "numLastHits": 182,
+            "numDenies": 7,
+            "gold": 945,
+            "networth": 15645,
+            "goldPerMinute": 539,
+            "experiencePerMinute": null,
+            "level": 20
+          },
+          {
+            "steamAccountId": 430858888,
+            "steamAccount": {
+              "name": "Ɑ͞ ̶͞ ̶͞ ̶͞ لں͞"
+            },
+            "heroId": 104,
+            "hero": {
+              "id": 104,
+              "name": "npc_dota_hero_legion_commander",
+              "displayName": "Legion Commander"
+            },
+            "isRadiant": false,
+            "numKills": 19,
+            "numDeaths": 6,
+            "numAssists": 8,
+            "numLastHits": 140,
+            "numDenies": 10,
+            "gold": 1295,
+            "networth": 19195,
+            "goldPerMinute": 661,
+            "experiencePerMinute": null,
+            "level": 20
+          },
+          {
+            "steamAccountId": 406523363,
+            "steamAccount": {
+              "name": "Charlie Brown"
+            },
+            "heroId": 29,
+            "hero": {
+              "id": 29,
+              "name": "npc_dota_hero_tidehunter",
+              "displayName": "Tidehunter"
+            },
+            "isRadiant": false,
+            "numKills": 15,
+            "numDeaths": 4,
+            "numAssists": 16,
+            "numLastHits": 246,
+            "numDenies": 6,
+            "gold": 3326,
+            "networth": 20876,
+            "goldPerMinute": 719,
+            "experiencePerMinute": null,
+            "level": 22
+          },
+          {
+            "steamAccountId": 167796104,
+            "steamAccount": {
+              "name": "Don't ping me"
+            },
+            "heroId": 66,
+            "hero": {
+              "id": 66,
+              "name": "npc_dota_hero_chen",
+              "displayName": "Chen"
+            },
+            "isRadiant": false,
+            "numKills": 3,
+            "numDeaths": 2,
+            "numAssists": 27,
+            "numLastHits": 84,
+            "numDenies": 10,
+            "gold": 1973,
+            "networth": 11298,
+            "goldPerMinute": 389,
+            "experiencePerMinute": null,
+            "level": 19
+          }
+        ]
+      }
+    }
+  }
+} 
