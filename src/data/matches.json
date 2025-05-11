@@ -3,122 +3,125 @@
     {
       "id": 1,
       "name": "GRUPO A",
-      "teamIds": [1, 2, 3, 4]
+      "teamIds": [7, 8, 3, 6]
     },
     {
       "id": 2,
       "name": "GRUPO B",
-      "teamIds": [5, 6, 7, 8]
+      "teamIds": [4, 2, 1, 5]
     }
   ],
   "matches": [
     {
       "id": 1,
       "groupId": 1,
-      "date": "2025-05-01T16:00:00-05:00",
-      "teamAId": 1,
-      "teamBId": 2,
-      "scoreA": 2,
-      "scoreB": 0
+      "date": "2025-05-10T16:00:00-05:00",
+      "teamAId": 8,
+      "teamBId": 7,
+      "scoreA": null,
+      "scoreB": null
     },
     {
       "id": 2,
-      "groupId": 1,
-      "date": "2025-05-01T16:00:00-05:00",
-      "teamAId": 3,
-      "teamBId": 4,
-      "scoreA": 1,
-      "scoreB": 2
+      "groupId": 2,
+      "date": "2025-05-10T18:30:00-05:00",
+      "teamAId": 4,
+      "teamBId": 2,
+      "scoreA": null,
+      "scoreB": null
     },
     {
       "id": 3,
       "groupId": 1,
-      "date": "2025-05-08T16:00:00-05:00",
-      "teamAId": 1,
-      "teamBId": 3,
-      "scoreA": 2,
-      "scoreB": 1
+      "date": "2025-05-10T21:00:00-05:00",
+      "teamAId": 3,
+      "teamBId": 6,
+      "scoreA": null,
+      "scoreB": null
     },
+
     {
       "id": 4,
-      "groupId": 1,
-      "date": "2025-05-08T16:00:00-05:00",
-      "teamAId": 2,
-      "teamBId": 4,
-      "scoreA": 0,
-      "scoreB": 1
+      "groupId": 2,
+      "date": "2025-05-12T16:00:00-05:00",
+      "teamAId": 5,
+      "teamBId": 1,
+      "scoreA": null,
+      "scoreB": null
     },
     {
       "id": 5,
       "groupId": 1,
-      "date": "2025-05-15T16:00:00-05:00",
-      "teamAId": 1,
-      "teamBId": 4,
-      "scoreA": 1,
-      "scoreB": 2
+      "date": "2025-05-12T18:30:00-05:00",
+      "teamAId": 6,
+      "teamBId": 7,
+      "scoreA": null,
+      "scoreB": null
     },
     {
       "id": 6,
-      "groupId": 1,
-      "date": "2025-05-15T16:00:00-05:00",
+      "groupId": 2,
+      "date": "2025-05-12T21:00:00-05:00",
       "teamAId": 2,
-      "teamBId": 3,
-      "scoreA": 0,
-      "scoreB": 1
+      "teamBId": 1,
+      "scoreA": null,
+      "scoreB": null
     },
+
     {
       "id": 7,
-      "groupId": 2,
-      "date": "2025-05-02T16:00:00-05:00",
-      "teamAId": 5,
-      "teamBId": 6,
-      "scoreA": 2,
-      "scoreB": 1
+      "groupId": 1,
+      "date": "2025-05-13T16:00:00-05:00",
+      "teamAId": 7,
+      "teamBId": 3,
+      "scoreA": null,
+      "scoreB": null
     },
     {
       "id": 8,
       "groupId": 2,
-      "date": "2025-05-02T16:00:00-05:00",
-      "teamAId": 7,
-      "teamBId": 8,
-      "scoreA": 2,
-      "scoreB": 0
+      "date": "2025-05-13T18:30:00-05:00",
+      "teamAId": 4,
+      "teamBId": 1,
+      "scoreA": null,
+      "scoreB": null
     },
     {
       "id": 9,
-      "groupId": 2,
-      "date": "2025-05-09T16:00:00-05:00",
-      "teamAId": 5,
-      "teamBId": 7,
-      "scoreA": 2,
-      "scoreB": 0
+      "groupId": 1,
+      "date": "2025-05-13T21:00:00-05:00",
+      "teamAId": 8,
+      "teamBId": 6,
+      "scoreA": null,
+      "scoreB": null
     },
+
     {
       "id": 10,
       "groupId": 2,
-      "date": "2025-05-09T16:00:00-05:00",
-      "teamAId": 6,
-      "teamBId": 8,
-      "scoreA": 2,
-      "scoreB": 0
+      "date": "2025-05-14T16:00:00-05:00",
+      "teamAId": 5,
+      "teamBId": 4,
+      "scoreA": null,
+      "scoreB": null
     },
     {
       "id": 11,
-      "groupId": 2,
-      "date": "2025-05-16T16:00:00-05:00",
-      "teamAId": 5,
-      "teamBId": 8,
-      "scoreA": 2,
-      "scoreB": 0
+      "groupId": 1,
+      "date": "2025-05-14T18:30:00-05:00",
+      "teamAId": 8,
+      "teamBId": 3,
+      "scoreA": null,
+      "scoreB": null
     },
     {
       "id": 12,
       "groupId": 2,
-      "date": "2025-05-16T16:00:00-05:00",
-      "teamAId": 6,
-      "teamBId": 7,
-      "scoreA": 1,
-      "scoreB": 0
+      "date": "2025-05-14T21:00:00-05:00",
+      "teamAId": 2,
+      "teamBId": 5,
+      "scoreA": null,
+      "scoreB": null
     }
   ]
 }
