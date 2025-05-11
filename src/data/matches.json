@@ -18,8 +18,8 @@
       "date": "2025-05-10T16:00:00-05:00",
       "teamAId": 8,
       "teamBId": 7,
-      "scoreA": null,
-      "scoreB": null
+      "scoreA": 1,
+      "scoreB": 1
     },
     {
       "id": 2,
@@ -27,8 +27,8 @@
       "date": "2025-05-10T18:30:00-05:00",
       "teamAId": 4,
       "teamBId": 2,
-      "scoreA": null,
-      "scoreB": null
+      "scoreA": 2,
+      "scoreB": 0
     },
     {
       "id": 3,
@@ -36,8 +36,8 @@
       "date": "2025-05-10T21:00:00-05:00",
       "teamAId": 3,
       "teamBId": 6,
-      "scoreA": null,
-      "scoreB": null
+      "scoreA": 1,
+      "scoreB": 1
     },
 
     {
