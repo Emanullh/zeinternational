@@ -92,8 +92,8 @@
       "date": "2025-05-13T21:00:00-05:00",
       "teamAId": 8,
       "teamBId": 6,
-      "scoreA": null,
-      "scoreB": null
+      "scoreA": 1,
+      "scoreB": 1
     },
 
     {
