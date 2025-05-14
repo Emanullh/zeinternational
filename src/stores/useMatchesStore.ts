@@ -29,6 +29,7 @@ export interface TeamStanding {
   teamLogo: string
   played: number
   won: number
+  draw: number
   lost: number
   gamesWon: number
   gamesLost: number
@@ -96,6 +97,7 @@ export const useMatchesStore = create<MatchesState>((set, get) => ({
         teamLogo: team.teamlogo,
         played: 0,
         won: 0,
+        draw: 0,
         lost: 0,
         gamesWon: 0,
         gamesLost: 0,
@@ -131,6 +133,8 @@ export const useMatchesStore = create<MatchesState>((set, get) => ({
         teamB.points += 3
       } else {
         // In case of a draw, both teams get 1 point
+        teamA.draw += 1
+        teamB.draw += 1
         teamA.points += 1
         teamB.points += 1
       }

@@ -56,7 +56,7 @@ const columns = [
       )
     },
   }),
-  columnHelper.accessor((row) => `${row.won}-${row.lost}`, {
+  columnHelper.accessor((row) => `${row.won}-${row.draw}-${row.lost}`, {
     id: 'matches',
     header: () => 'Partidos',
     cell: (info) => (
