@@ -74,14 +74,6 @@ const columns = [
       </div>
     ),
   }),
-  columnHelper.accessor('points', {
-    header: () => 'Puntos',
-    cell: (info) => (
-      <div className="font-bold whitespace-pre w-[60px] sm:w-[70px] text-center font-notosans text-xs sm:text-sm">
-        {info.getValue()}
-      </div>
-    ),
-  }),
 ]
 
 const GroupStandings = ({ groupId }: GroupStandingsProps) => {
