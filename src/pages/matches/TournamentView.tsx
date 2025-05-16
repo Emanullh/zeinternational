@@ -40,7 +40,7 @@ const TournamentView = () => {
         <div className="mt-12 mb-6">
           <div className="flex flex-col items-center mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white uppercase tracking-[0.2em] font-notosans">
-              Partidos por Grupo
+              Fecha de partidas
             </h2>
             <div className="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[400px] h-[2px] sm:h-[3px] md:h-[4px] lg:h-[5px] bg-[#ff6046] rounded-[1px] mt-4" />
           </div>

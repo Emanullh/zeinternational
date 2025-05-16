@@ -533,8 +533,10 @@ const PlayoffsBracketD3 = () => {
 
   return (
     <div className="flex flex-col items-center py-8 text-white">
-      <div className="overflow-auto w-full flex justify-center">
-        <svg ref={d3Container}></svg>
+      <div className="w-full max-w-[1024px] overflow-x-auto">
+        <div className="min-w-[1024px]">
+          <svg ref={d3Container}></svg>
+        </div>
       </div>
     </div>
   )
