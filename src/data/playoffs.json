@@ -1,0 +1,122 @@
+{
+  "upperBracket": {
+    "semifinals": [
+      {
+        "id": "ub-sf-1",
+        "teams": [
+          {
+            "teamid": 7,
+            "score": 0
+          },
+          {
+            "teamid": 5,
+            "score": 0
+          }
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "ub-sf-2",
+        "teams": [
+          {
+            "teamid": 4,
+            "score": null
+          },
+          {
+            "teamid": 3,
+            "score": null
+          }
+        ],
+        "status": "pending"
+      }
+    ],
+    "final": {
+      "id": "ub-final",
+      "teams": [
+        {
+          "teamid": null,
+          "score": null
+        },
+        {
+          "teamid": null,
+          "score": null
+        }
+      ],
+      "status": "pending"
+    }
+  },
+  "lowerBracket": {
+    "quarterfinals": [
+      {
+        "id": "lb-qf-1",
+        "teams": [
+          {
+            "teamid": null,
+            "score": null
+          },
+          {
+            "teamid": 8,
+            "score": null
+          }
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "lb-qf-2",
+        "teams": [
+          {
+            "teamid": null,
+            "score": null
+          },
+          {
+            "teamid": 2,
+            "score": null
+          }
+        ],
+        "status": "pending"
+      }
+    ],
+    "semifinal": {
+      "id": "lb-sf",
+      "teams": [
+        {
+          "teamid": null,
+          "score": null
+        },
+        {
+          "teamid": null,
+          "score": null
+        }
+      ],
+      "status": "pending"
+    },
+    "final": {
+      "id": "lb-final",
+      "teams": [
+        {
+          "teamid": null,
+          "score": null
+        },
+        {
+          "teamid": null,
+          "score": null
+        }
+      ],
+      "status": "pending"
+    }
+  },
+  "grandFinal": {
+    "id": "grand-final",
+    "teams": [
+      {
+        "teamid": null,
+        "score": null
+      },
+      {
+        "teamid": null,
+        "score": null
+      }
+    ],
+    "status": "pending"
+  }
+}

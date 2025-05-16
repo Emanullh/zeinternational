@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import TournamentGroups from './components/TournamentGroups'
 import MatchList from './components/MatchList'
 import { useMatchesStore } from '../../stores/useMatchesStore'
+import PlayoffsBracket from './components/PlayoffsBracket'
 
 const TournamentView = () => {
   const { tournamentData } = useMatchesStore()
@@ -9,7 +10,7 @@ const TournamentView = () => {
   // Avoid rendering before data is ready
   if (tournamentData.groups.length === 0) {
     return (
-      <div className="text-center text-white p-8">
+      <div className="text-center text-white p-8 font-notosans">
         Cargando datos del torneo...
       </div>
     )
@@ -18,16 +19,31 @@ const TournamentView = () => {
   return (
     <div className="min-h-screen text-white pb-8 pt-24">
       <div className="container mx-auto">
-        <h1 className="text-3xl font-black text-center mb-8 text-[#ff6046] uppercase tracking-wide font-reaver">
-          Posiciones del Torneo
-        </h1>
+        <div className="flex flex-col items-center mb-12">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white uppercase tracking-[0.2em] font-notosans">
+            Playoffs
+          </h1>
+          <div className="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[400px] h-[2px] sm:h-[3px] md:h-[4px] lg:h-[5px] bg-[#ff6046] rounded-[1px] mt-4" />
+        </div>
+        
+        <PlayoffsBracket />
+        
+        <div className="flex flex-col items-center mb-12">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white uppercase tracking-[0.2em] font-notosans">
+            Posiciones del Torneo
+          </h1>
+          <div className="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[400px] h-[2px] sm:h-[3px] md:h-[4px] lg:h-[5px] bg-[#ff6046] rounded-[1px] mt-4" />
+        </div>
 
         <TournamentGroups />
 
         <div className="mt-12 mb-6">
-          <h2 className="text-2xl font-black text-center mb-6 text-[#ff6046] uppercase tracking-wide font-reaver">
-            Partidos por Grupo
-          </h2>
+          <div className="flex flex-col items-center mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white uppercase tracking-[0.2em] font-notosans">
+              Partidos por Grupo
+            </h2>
+            <div className="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[400px] h-[2px] sm:h-[3px] md:h-[4px] lg:h-[5px] bg-[#ff6046] rounded-[1px] mt-4" />
+          </div>
 
           <div className="flex flex-col md:flex-row justify-center gap-8">
             {tournamentData.groups.map((group) => (
