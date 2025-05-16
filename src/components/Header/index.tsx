@@ -213,13 +213,13 @@ const Header: React.FC = () => {
               className="w-full group relative flex-col items-end py-1 leading-relaxed tracking-wider md:text-right md:flex-grow"
               rel="noopener noreferrer"
               target="_blank"
-              title="Apuesta en vivo por Betsson"
+              title="Apuesta en Betsson"
             >
               <span
                 id="buy-tickets"
                 className="font-goudytrajan neon-text relative inline-block font-bold"
               >
-                APUESTA EN VIVO POR BETSSON
+                APUESTA EN BETSSON
                 <span className="absolute inset-0 top-3.5 mt-1 text-left text-[10px] leading-normal tracking-wide text-yellow-500 md:text-center">
                   50 SOLES DE REGALO
                 </span>
