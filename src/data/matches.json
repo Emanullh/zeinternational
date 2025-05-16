@@ -9,6 +9,11 @@
       "id": 2,
       "name": "GRUPO B",
       "teamIds": [4, 2, 1, 5]
+    },
+    {
+      "id": 99,
+      "name": "TIEBREAKER",
+      "teamIds": [3, 8, 5, 2]
     }
   ],
   "matches": [
@@ -122,6 +127,24 @@
       "teamBId": 5,
       "scoreA": 1,
       "scoreB": 1
+    },
+    {
+      "id": 13,
+      "groupId": 99,
+      "date": "2025-05-15T18:00:00-05:00",
+      "teamAId": 3,
+      "teamBId": 8,
+      "scoreA": 1,
+      "scoreB": 0
+    },
+    {
+      "id": 14,
+      "groupId": 99,
+      "date": "2025-05-15T19:00:00-05:00",
+      "teamAId": 5,
+      "teamBId": 2,
+      "scoreA": 1,
+      "scoreB": 0
     }
   ]
 }
