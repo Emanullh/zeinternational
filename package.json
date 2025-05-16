@@ -33,7 +33,6 @@
     "firebase": "^11.6.1",
     "motion": "^12.11.3",
     "react": "^19.1.0",
-    "react-brackets": "^0.4.7",
     "react-dom": "^19.1.0",
     "react-router": "^7.5.3",
     "zustand": "^5.0.4"
