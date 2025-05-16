@@ -209,19 +209,19 @@ const Header: React.FC = () => {
           {/* Buy tickets */}
           <div>
             <a
-              href="#"
+              href="https://record.betsafe.com/_3kUZiOfSVrVCnN6gMv_or2Nd7ZgqdRLk/1/"
               className="w-full group relative flex-col items-end py-1 leading-relaxed tracking-wider md:text-right md:flex-grow"
               rel="noopener noreferrer"
               target="_blank"
-              title="Comprar entradas para Zeinternacional"
+              title="Apuesta en vivo por Betsson"
             >
               <span
                 id="buy-tickets"
                 className="font-goudytrajan neon-text relative inline-block font-bold"
               >
-                COMPRA LAS ENTRADAS
+                APUESTA EN VIVO POR BETSSON
                 <span className="absolute inset-0 top-3.5 mt-1 text-left text-[10px] leading-normal tracking-wide text-yellow-500 md:text-center">
-                  PROXIMAMENTE
+                  50 SOLES DE REGALO
                 </span>
               </span>
             </a>

@@ -4,7 +4,7 @@ import MatchList from './components/MatchList'
 import { useMatchesStore } from '../../stores/useMatchesStore'
 import PlayoffsBracket from './components/PlayoffsBracket'
 import PlayoffsMatchList from './components/PlayoffsMatchList'
-
+import BetssonBanner from './components/BetssonBanner'
 const TournamentView = () => {
   const { tournamentData } = useMatchesStore()
 
@@ -19,6 +19,8 @@ const TournamentView = () => {
 
   return (
     <div className="min-h-screen text-white pb-8 pt-24">
+      <BetssonBanner />
+      <div className="mb-6" />
       <div className="container mx-auto">
         <div className="flex flex-col items-center mb-12">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white uppercase tracking-[0.2em] font-notosans">

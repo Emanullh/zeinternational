@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useLiveMatch } from '../hooks/useLiveMatch'
 import { DOTA_IMAGE_CDN } from '../config'
 import heroes from '../data/heroes.json'
+import BetssonBanner from './matches/components/BetssonBanner'
 
 type Hero = {
   id: number
@@ -62,15 +63,15 @@ function getPlayerStat(player: any, stat: StatType): number {
 export default function LiveMatch() {
   const match = useLiveMatch()
   const [selectedStat, setSelectedStat] = useState<StatType>('KDA')
-  
+
   if (!match) return <div className="text-white">Cargando...</div>
-  
+
   const radiant = match.players.filter((p) => p.isRadiant)
   const dire = match.players.filter((p) => !p.isRadiant)
 
   // Sort players by selected stat
-  const sortedPlayers = [...match.players].sort((a, b) => 
-    getPlayerStat(b, selectedStat) - getPlayerStat(a, selectedStat)
+  const sortedPlayers = [...match.players].sort(
+    (a, b) => getPlayerStat(b, selectedStat) - getPlayerStat(a, selectedStat),
   )
 
   const stats: StatType[] = ['KDA', 'LH/DN', 'LVL', 'Gold', 'NW', 'GPM']
@@ -83,20 +84,21 @@ export default function LiveMatch() {
   return (
     <div className="min-h-screen text-white pb-8 pt-24">
       {/* Stream Container */}
+      <BetssonBanner />
+      <div className="mb-6" />
       <div className="relative w-full max-w-[1280px] mx-auto mb-8">
         <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
-          <iframe 
-            src="https://player.kick.com/elzeein" 
+          <iframe
+            src="https://player.kick.com/elzeein"
             className="absolute top-0 left-0 w-full h-full"
-            frameBorder="0" 
-            scrolling="no" 
+            frameBorder="0"
+            scrolling="no"
             allowFullScreen={true}
           />
         </div>
       </div>
 
       <div className="container mx-auto">
-      
         {/* Match Info */}
         <div className="bg-black/60 rounded-lg p-4 mb-8 border border-[#222]">
           <div className="flex items-center justify-between text-sm text-gray-400 mb-2">
@@ -114,16 +116,26 @@ export default function LiveMatch() {
         {/* Score */}
         <div className="flex items-center justify-center gap-8 mb-8">
           <div className="flex flex-col items-center">
-            <span className="text-green-400 font-bold text-lg md:text-xl font-goudytrajan">Radiant</span>
-            <span className="text-3xl md:text-5xl font-black text-white drop-shadow-lg">{match.radiantScore}</span>
+            <span className="text-green-400 font-bold text-lg md:text-xl font-goudytrajan">
+              Radiant
+            </span>
+            <span className="text-3xl md:text-5xl font-black text-white drop-shadow-lg">
+              {match.radiantScore}
+            </span>
           </div>
           <div className="bg-black/60 rounded-lg px-4 py-2 flex flex-col items-center border border-[#222]">
             <span className="text-xs text-gray-400 font-notosans">Minuto</span>
-            <span className="text-xl font-bold text-white font-reaver">{match.gameMinute}</span>
+            <span className="text-xl font-bold text-white font-reaver">
+              {match.gameMinute}
+            </span>
           </div>
           <div className="flex flex-col items-center">
-            <span className="text-red-400 font-bold text-lg md:text-xl font-goudytrajan">Dire</span>
-            <span className="text-3xl md:text-5xl font-black text-white drop-shadow-lg">{match.direScore}</span>
+            <span className="text-red-400 font-bold text-lg md:text-xl font-goudytrajan">
+              Dire
+            </span>
+            <span className="text-3xl md:text-5xl font-black text-white drop-shadow-lg">
+              {match.direScore}
+            </span>
           </div>
         </div>
 
@@ -142,17 +154,31 @@ export default function LiveMatch() {
                     src={getHeroImage(player.heroId)}
                     alt={player.hero.displayName}
                   />
-                  <div className="text-xs text-gray-300 font-notosans mb-1">{player.hero.displayName}</div>
-                  <div className="text-base font-bold text-white font-reaver mb-1 truncate w-full text-center">{player.steamAccount.name}</div>
+                  <div className="text-xs text-gray-300 font-notosans mb-1">
+                    {player.hero.displayName}
+                  </div>
+                  <div className="text-base font-bold text-white font-reaver mb-1 truncate w-full text-center">
+                    {player.steamAccount.name}
+                  </div>
                   <div className="flex flex-row items-center justify-center gap-2 text-xs text-gray-400 font-notosans mb-1">
-                    <span className="text-green-400 font-bold">{player.numKills}</span>
+                    <span className="text-green-400 font-bold">
+                      {player.numKills}
+                    </span>
                     <span>/</span>
-                    <span className="text-red-400 font-bold">{player.numDeaths}</span>
+                    <span className="text-red-400 font-bold">
+                      {player.numDeaths}
+                    </span>
                     <span>/</span>
-                    <span className="text-blue-400 font-bold">{player.numAssists}</span>
+                    <span className="text-blue-400 font-bold">
+                      {player.numAssists}
+                    </span>
                   </div>
                   <div className="flex flex-row items-center justify-center gap-2 text-xs text-yellow-300 font-bold font-reaver">
-                    <img src="/images/dota2/gold.png" alt="gold" className="w-4 h-4 inline-block mr-1" />
+                    <img
+                      src="/images/dota2/gold.png"
+                      alt="gold"
+                      className="w-4 h-4 inline-block mr-1"
+                    />
                     {player.networth.toLocaleString()}
                     <span className="ml-2 text-white">Lvl {player.level}</span>
                   </div>
@@ -178,17 +204,31 @@ export default function LiveMatch() {
                     src={getHeroImage(player.heroId)}
                     alt={player.hero.displayName}
                   />
-                  <div className="text-xs text-gray-300 font-notosans mb-1">{player.hero.displayName}</div>
-                  <div className="text-base font-bold text-white font-reaver mb-1 truncate w-full text-center">{player.steamAccount.name}</div>
+                  <div className="text-xs text-gray-300 font-notosans mb-1">
+                    {player.hero.displayName}
+                  </div>
+                  <div className="text-base font-bold text-white font-reaver mb-1 truncate w-full text-center">
+                    {player.steamAccount.name}
+                  </div>
                   <div className="flex flex-row items-center justify-center gap-2 text-xs text-gray-400 font-notosans mb-1">
-                    <span className="text-green-400 font-bold">{player.numKills}</span>
+                    <span className="text-green-400 font-bold">
+                      {player.numKills}
+                    </span>
                     <span>/</span>
-                    <span className="text-red-400 font-bold">{player.numDeaths}</span>
+                    <span className="text-red-400 font-bold">
+                      {player.numDeaths}
+                    </span>
                     <span>/</span>
-                    <span className="text-blue-400 font-bold">{player.numAssists}</span>
+                    <span className="text-blue-400 font-bold">
+                      {player.numAssists}
+                    </span>
                   </div>
                   <div className="flex flex-row items-center justify-center gap-2 text-xs text-yellow-300 font-bold font-reaver">
-                    <img src="/images/dota2/gold.png" alt="gold" className="w-4 h-4 inline-block mr-1" />
+                    <img
+                      src="/images/dota2/gold.png"
+                      alt="gold"
+                      className="w-4 h-4 inline-block mr-1"
+                    />
                     {player.networth.toLocaleString()}
                     <span className="ml-2 text-white">Lvl {player.level}</span>
                   </div>
@@ -209,7 +249,9 @@ export default function LiveMatch() {
               <span className="text-white font-bold">
                 {match.radiantLead > 0 ? 'Ventaja Radiant' : 'Ventaja Dire'}
               </span>
-              <span className="text-[#ff6046] font-bold">{Math.abs(match.radiantLead).toLocaleString()}</span>
+              <span className="text-[#ff6046] font-bold">
+                {Math.abs(match.radiantLead).toLocaleString()}
+              </span>
             </div>
           </div>
 
@@ -220,21 +262,29 @@ export default function LiveMatch() {
                 key={stat}
                 onClick={() => setSelectedStat(stat)}
                 className={`px-3 py-1 rounded text-sm font-bold flex items-center gap-2 ${
-                  selectedStat === stat 
-                    ? 'bg-[#ff6046] text-white' 
+                  selectedStat === stat
+                    ? 'bg-[#ff6046] text-white'
                     : 'bg-black/40 text-gray-400 hover:text-white'
                 }`}
               >
                 <span>{stat}</span>
-                <kbd className="text-xs bg-black/20 px-1 rounded">{stat === 'KDA' ? 'Q' : 
-                  stat === 'LH/DN' ? 'W' : 
-                  stat === 'LVL' ? 'E' : 
-                  stat === 'Gold' ? 'T' : 
-                  stat === 'NW' ? 'Y' : 'U'}</kbd>
+                <kbd className="text-xs bg-black/20 px-1 rounded">
+                  {stat === 'KDA'
+                    ? 'Q'
+                    : stat === 'LH/DN'
+                      ? 'W'
+                      : stat === 'LVL'
+                        ? 'E'
+                        : stat === 'Gold'
+                          ? 'T'
+                          : stat === 'NW'
+                            ? 'Y'
+                            : 'U'}
+                </kbd>
               </button>
             ))}
           </div>
-          
+
           <div className="space-y-2">
             {sortedPlayers.map((player) => {
               const statValue = getPlayerStat(player, selectedStat)
@@ -242,22 +292,33 @@ export default function LiveMatch() {
               const percentage = (statValue / maxStat) * 100
 
               return (
-                <div key={player.steamAccountId} className="flex items-center gap-4 p-2 rounded bg-black/40">
+                <div
+                  key={player.steamAccountId}
+                  className="flex items-center gap-4 p-2 rounded bg-black/40"
+                >
                   <div className="w-8 h-8 rounded-full overflow-hidden">
-                    <img src={getHeroImage(player.heroId)} alt={player.hero.displayName} className="w-full h-full object-cover" />
+                    <img
+                      src={getHeroImage(player.heroId)}
+                      alt={player.hero.displayName}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between">
-                      <span className="text-white font-bold">{player.steamAccount.name}</span>
+                      <span className="text-white font-bold">
+                        {player.steamAccount.name}
+                      </span>
                       <span className="text-[#ff6046] font-bold">
-                        {selectedStat === 'KDA' ? `${player.numKills}/${player.numDeaths}/${player.numAssists}` :
-                         selectedStat === 'LH/DN' ? `${player.numLastHits}/${player.numDenies}` :
-                         statValue.toLocaleString()}
+                        {selectedStat === 'KDA'
+                          ? `${player.numKills}/${player.numDeaths}/${player.numAssists}`
+                          : selectedStat === 'LH/DN'
+                            ? `${player.numLastHits}/${player.numDenies}`
+                            : statValue.toLocaleString()}
                       </span>
                     </div>
                     <div className="w-full bg-gray-700 h-1 rounded-full mt-1">
-                      <div 
-                        className="bg-[#ff6046] h-full rounded-full" 
+                      <div
+                        className="bg-[#ff6046] h-full rounded-full"
                         style={{ width: `${percentage}%` }}
                       />
                     </div>
@@ -270,4 +331,4 @@ export default function LiveMatch() {
       </div>
     </div>
   )
-} 
+}
