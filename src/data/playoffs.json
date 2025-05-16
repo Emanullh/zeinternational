@@ -3,20 +3,36 @@
     "semifinals": [
       {
         "id": "ub-sf-1",
+        "matchType": "bo3",
         "teams": [
           {
             "teamid": 7,
-            "score": 0
+            "score": 1
           },
           {
             "teamid": 5,
-            "score": 0
+            "score": 1
           }
         ],
-        "status": "pending"
+        "status": "in_progress",
+        "matches": [
+          {
+            "winner": 7,
+            "scheduledTime": "2025-05-15T20:00:00Z"
+          },
+          {
+            "winner": 5,
+            "scheduledTime": "2025-05-15T21:00:00Z"
+          },
+          {
+            "winner": null,
+            "scheduledTime": null
+          }
+        ]
       },
       {
         "id": "ub-sf-2",
+        "matchType": "bo3",
         "teams": [
           {
             "teamid": 4,
@@ -27,11 +43,26 @@
             "score": null
           }
         ],
-        "status": "pending"
+        "status": "pending",
+        "matches": [
+          {
+            "winner": null,
+            "scheduledTime": "2025-05-16T16:30:00Z"
+          },
+          {
+            "winner": null,
+            "scheduledTime": null
+          },
+          {
+            "winner": null,
+            "scheduledTime": null
+          }
+        ]
       }
     ],
     "final": {
       "id": "ub-final",
+      "matchType": "bo3",
       "teams": [
         {
           "teamid": null,
@@ -42,13 +73,28 @@
           "score": null
         }
       ],
-      "status": "pending"
+      "status": "pending",
+      "matches": [
+        {
+          "winner": null,
+          "scheduledTime": null
+        },
+        {
+          "winner": null,
+          "scheduledTime": null
+        },
+        {
+          "winner": null,
+          "scheduledTime": null
+        }
+      ]
     }
   },
   "lowerBracket": {
     "quarterfinals": [
       {
         "id": "lb-qf-1",
+        "matchType": "bo1",
         "teams": [
           {
             "teamid": null,
@@ -59,10 +105,17 @@
             "score": null
           }
         ],
-        "status": "pending"
+        "status": "pending",
+        "matches": [
+          {
+            "winner": null,
+            "scheduledTime": "2025-05-16T19:00:00Z"
+          }
+        ]
       },
       {
         "id": "lb-qf-2",
+        "matchType": "bo1",
         "teams": [
           {
             "teamid": null,
@@ -73,11 +126,18 @@
             "score": null
           }
         ],
-        "status": "pending"
+        "status": "pending",
+        "matches": [
+          {
+            "winner": null,
+            "scheduledTime": null
+          }
+        ]
       }
     ],
     "semifinal": {
       "id": "lb-sf",
+      "matchType": "bo3",
       "teams": [
         {
           "teamid": null,
@@ -88,10 +148,25 @@
           "score": null
         }
       ],
-      "status": "pending"
+      "status": "pending",
+      "matches": [
+        {
+          "winner": null,
+          "scheduledTime": null
+        },
+        {
+          "winner": null,
+          "scheduledTime": null
+        },
+        {
+          "winner": null,
+          "scheduledTime": null
+        }
+      ]
     },
     "final": {
       "id": "lb-final",
+      "matchType": "bo3",
       "teams": [
         {
           "teamid": null,
@@ -102,11 +177,26 @@
           "score": null
         }
       ],
-      "status": "pending"
+      "status": "pending",
+      "matches": [
+        {
+          "winner": null,
+          "scheduledTime": null
+        },
+        {
+          "winner": null,
+          "scheduledTime": null
+        },
+        {
+          "winner": null,
+          "scheduledTime": null
+        }
+      ]
     }
   },
   "grandFinal": {
     "id": "grand-final",
+    "matchType": "bo5",
     "teams": [
       {
         "teamid": null,
@@ -117,6 +207,28 @@
         "score": null
       }
     ],
-    "status": "pending"
+    "status": "pending",
+    "matches": [
+      {
+        "winner": null,
+        "scheduledTime": null
+      },
+      {
+        "winner": null,
+        "scheduledTime": null
+      },
+      {
+        "winner": null,
+        "scheduledTime": null
+      },
+      {
+        "winner": null,
+        "scheduledTime": null
+      },
+      {
+        "winner": null,
+        "scheduledTime": null
+      }
+    ]
   }
 }
