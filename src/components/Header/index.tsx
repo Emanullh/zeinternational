@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import logo_nav from '@/assets/images/logo_nav.webp'
+import BetssonBanner from '../BetssonBanner'
+
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -142,7 +144,7 @@ const Header: React.FC = () => {
                   group-hover:after:scale-x-100
                 "
               >
-                FASE DE GRUPOS
+                PLAYOFFS
               </span>
             </a>
 
@@ -204,26 +206,10 @@ const Header: React.FC = () => {
               </span>
             </a>*/}
           </div>
-          
-          {/* Buy tickets */}
-          <div>
-            <a
-              href="#"
-              className="w-full group relative flex-col items-end py-1 leading-relaxed tracking-wider md:text-right md:flex-grow"
-              rel="noopener noreferrer"
-              target="_blank"
-              title="Comprar entradas para Zeinternacional"
-            >
-              <span
-                id="buy-tickets"
-                className="font-goudytrajan neon-text relative inline-block font-bold"
-              >
-                COMPRA LAS ENTRADAS
-                <span className="absolute inset-0 top-3.5 mt-1 text-left text-[10px] leading-normal tracking-wide text-yellow-500 md:text-center">
-                  PROXIMAMENTE
-                </span>
-              </span>
-            </a>
+
+          {/* Betsson Banner */}
+          <div className="w-full md:w-[728px]">
+            <BetssonBanner />
           </div>
         </nav>
       </div>
