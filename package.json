@@ -73,7 +73,7 @@
     "lint-staged": "^16.2.5",
     "msw": "^2.12.1",
     "postcss": "^8.5.3",
-    "prettier": "^3.7.1",
+    "prettier": "^3.7.4",
     "prettier-plugin-tailwindcss": "^0.7.1",
     "rimraf": "^6.1.2",
     "tailwindcss": "^4.1.7",
